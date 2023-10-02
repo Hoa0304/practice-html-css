@@ -1,0 +1,21 @@
+{
+  "name": "html-css-practice",
+  "version": "1.0.0",
+  "description": "- This document introduce my workflow and some aim i wanna get in this task. It's overview about technical i use in website and how to run it.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/pages/index.html",
+    "build": "parcel build src/pages/index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "posthtml": "^0.16.6",
+    "sass": "^1.68.0"
+  },
+  "devDependencies": {
+    "posthtml-doctype": "^1.1.1",
+    "posthtml-include": "^1.7.4"
+  }
+}
