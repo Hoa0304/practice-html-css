@@ -1,7 +1,5 @@
-@mixin bg-img($bg: "") {
-    background-image: url($bg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    min-height: 100vh;
-  }
+@use 'sass:math';
+
+@function pxToRem($value){
+   @return math.div($value,16px) * 1rem;
+}

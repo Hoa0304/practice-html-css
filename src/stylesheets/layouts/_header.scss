@@ -1,0 +1,190 @@
+@use '../abstracts/variable' as *;
+@use '../abstracts/functions' as *;
+@use '../abstracts/mixins' as *;
+
+header {
+  font-family: $fontMontserrat;
+
+  .header-container {
+    position: relative;
+
+    .nav {
+      display: none;
+    }
+
+    .checkstatus--right {
+      display: none;
+    }
+
+    .home_icon--left {
+      position: relative;
+      height: pxToRem(21px);
+      width: pxToRem(200px);
+      top: pxToRem(56px);
+      left: 10%;
+      color: $color_white;
+      font-size: pxToRem(18px);
+      font-weight: 700;
+      font-style: normal;
+      line-height: normal;
+      text-decoration: none;
+
+      &::after {
+        position: absolute;
+        content: "";
+        bottom: 0;
+        left: 0;
+        background-color: $color_blue;
+        height: pxToRem(3px);
+        width: pxToRem(85px);
+        top: pxToRem(25px);
+        border-radius: 10px;
+      }
+    }
+
+    .icon_align--right {
+      position: absolute;
+      right: 10%;
+      top: pxToRem(50px);
+      width: pxToRem(30px);
+      height: pxToRem(30px);
+      flex-shrink: 0;
+      background-color: $color_icon_right;
+      padding: 7px;
+      border-radius: 10px;
+    }
+  }
+}
+
+@include tablet {
+  header {
+    .header-container {
+      .home_icon--left {
+        top: pxToRem(50px);
+        font-size: pxToRem(26px);
+        height: pxToRem(31px);
+      }
+
+      .home_icon--left::after {
+        top: pxToRem(35px);
+      }
+
+      .icon_align--right {
+        width: pxToRem(45px);
+        height: pxToRem(45px);
+      }
+    }
+  }
+}
+
+@include desktop {
+  header {
+    .header-container{
+
+        .checkstatus--right {
+            position: absolute;
+            display: block;
+            top: pxToRem(50px);
+            color: $color_blue;
+            font-size: pxToRem(24px);
+            font-weight: 700;
+            font-style: normal;
+            line-height: normal;
+            padding: pxToRem(20px) pxToRem(20px);
+            right: 5%;
+            border-radius: 20px;
+            background-color: $color_background_checkstt;
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+          }
+      
+          .icon_align--right {
+            display: none;
+          }
+      
+          .home_icon--left {
+                 font-size: pxToRem(32px);
+                 left: 5%;
+          }
+      
+          .home_icon--left::after {
+            width: pxToRem(100px);
+            top: pxToRem(40px);
+          }
+      
+          .nav {
+            display: block;
+            position: absolute;
+            top: pxToRem(56px);
+            margin-left: 30%;
+            margin-right: auto;
+            width: fit-content;
+      
+            ul {
+              display: inline-flex;
+              align-items: flex-start;
+              gap: 25px;
+      
+              .nav_pk_items:nth-child(1) {
+                position: relative;
+      
+                a {
+                  color: $color_white;
+                  font-weight: 900;
+                }
+              }
+      
+              .nav_pk_items:nth-child(1)::after {
+                content: "";
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                bottom: -10px;
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background-color: $color_blue;
+              }
+      
+              .nav_pk_items {
+                position: relative;
+                list-style-type: none;
+      
+                a {
+                  text-decoration: none;
+                  font-size: 1.5rem;
+                  font-style: normal;
+                  font-weight: 500;
+                  line-height: normal;
+                  color: $color_initial_header;
+                  font-style: normal;
+                  position: relative;
+                  font-family: "Montserrat Regular", sans-serif;
+                }
+      
+                .nav_items::after {
+                  content: "";
+                  position: absolute;
+                  left: 50%;
+                  transform: translateX(-50%);
+                  bottom: -10px;
+                  width: 10px;
+                  height: 10px;
+                  background-color: $color_blue;
+                  border-radius: 50%;
+                  opacity: 0;
+                  font-weight: 700;
+                }
+      
+                .nav_items:hover {
+                  color: $color_white;
+                }
+      
+                .nav_items:hover::after {
+                  opacity: 1;
+                }
+              }
+            }
+          }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+@mixin bg-img($bg: "") {
+    background-image: url($bg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+@mixin mobile {
+    @media screen and (max-width:414px) {
+        @content;
+    }
+}
+
+@mixin middle {
+    @media screen and (min-width:415px) and (max-width:767px) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media screen and (min-width:768px) and (max-width:1199px) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media screen and (min-width:1200px) {
+        @content;
+    }
+}
