@@ -1,23 +1,28 @@
 @use "abstracts/" as *;
 
 
-
-@media screen and (max-width:767px) {
-   body{
+@include mobile{
+     body{
         @include bg-img("../assets/images/bgMobile.png");
        
-    }       
+    } 
 }
-@media screen and (min-width:768px) and (max-width:1439px){
+@include middle{
+    body{
+        @include bg-img("../assets/images/bgTablet.png");
+       
+    } 
+}
+
+@include tablet{
     body{
         @include bg-img("../assets/images/bgTablet.png");
        
     }
 }
-@media screen and (min-width:1440px) {
+@include desktop{
     body{
         @include bg-img("../assets/images/bgDesktop.png");
     
     }
-
 }
