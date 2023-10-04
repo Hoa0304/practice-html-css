@@ -315,7 +315,7 @@
 }
 @include desktop{
    .intro{
-    top: pxToRem(211px);
+    top: pxToRem(210px);
     left: 4%;
     flex-direction: row;
     .intro_infor{
@@ -335,6 +335,7 @@
              height: pxToRem(69px);
              width: pxToRem(210px);
              margin-right: 30px;
+             font-weight: 700;
             }
             .button--right{
                 font-size: pxToRem(24px);

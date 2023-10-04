@@ -1,12 +1,10 @@
 @use "abstracts/" as *;
-
-
-@include mobile{
      body{
         @include bg-img("../assets/images/bgMobile.png");
-       
+       position: relative;
+       z-index: -1;
     } 
-}
+
 @include middle{
     body{
         @include bg-img("../assets/images/bgTablet.png");
