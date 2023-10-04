@@ -55,7 +55,26 @@ header {
     }
   }
 }
+@include middle{
+  header {
+    .header-container {
+      .home_icon--left {
+        top: pxToRem(50px);
+        font-size: pxToRem(26px);
+        height: pxToRem(31px);
+      }
 
+      .home_icon--left::after {
+        top: pxToRem(35px);
+      }
+
+      .icon_align--right {
+        width: pxToRem(45px);
+        height: pxToRem(45px);
+      }
+    }
+  }
+}
 @include tablet {
   header {
     .header-container {
@@ -114,7 +133,7 @@ header {
           .nav {
             display: block;
             position: absolute;
-            top: pxToRem(56px);
+            top: pxToRem(60px);
             margin-left: 30%;
             margin-right: auto;
             width: fit-content;
