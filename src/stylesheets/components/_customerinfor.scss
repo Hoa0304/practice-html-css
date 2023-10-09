@@ -2,13 +2,10 @@
 
 .cusinforsub {
     width: 100%;
-    height: 1095px;
+    height: pxToRem(1095px);
     font-family: $fontMontserrat;
     position: absolute;
-    top: 2750px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
+    top: pxToRem(2750px);
     background-color: $color_white;
 
     .cusinfor {
@@ -20,36 +17,36 @@
         .cusinfor_line1 {
             margin-left: auto;
             margin-right: auto;
-            margin-bottom: 40px;
+            margin-bottom: pxToRem(40px);
             color: $color_black;
             font-size: pxToRem(24px);
             font-style: normal;
             font-weight: 700;
             line-height: normal;
-            width: 230px;
-            height: 60px;
+            width: pxToRem(230px);
+            height: pxToRem(60px);
         }
 
         .cusinfor_image {
-            width: 300px;
-            height: 73px;
+            width: pxToRem(300px);
+            height: pxToRem(73px);
             position: relative;
-            margin-bottom: 30px;
+            margin-bottom: pxToRem(30px);
 
             .cusinfor_image_card {
                 position: relative;
                 margin-left: 15%;
-                padding: 40px 0 0 0;
+                padding: pxToRem(40px) 0 0 0;
                 margin-right: auto;
-                width: 290px;
-                height: 365px;
+                width: pxToRem(290px);
+                height: pxToRem(365px);
                 background: url("../assets/images/bgMobile.png");
                 border-radius: 20px;
 
                 .imagevaccine--fg {
                     .imagevaccine--svg {
-                        width: 287px;
-                        height: 365px;
+                        width: pxToRem(287px);
+                        height: pxToRem(365px);
                     }
                 }
 
@@ -63,7 +60,7 @@
                     line-height: normal;
                     font-weight: 700;
                     font-style: normal;
-                    width: 70px;
+                    width: pxToRem(70px);
                 }
 
                 .link {
@@ -71,8 +68,8 @@
                     bottom: 30px;
                     left: 0;
                     margin-left: 15%;
-                    width: 200px;
-                    height: 50px;
+                    width: pxToRem(200px);
+                    height: pxToRem(50px);
                     background-color: $color-196_025;
                     border-radius: 10px;
                     display: flex;
@@ -93,12 +90,12 @@
 
             .iconcorona--fg {
                 position: absolute;
-                top: -30px;
-                left: 30px;
+                top: pxToRem(-30px);
+                left: pxToRem(30px);
 
                 .iconcorona--svg {
-                    width: 75px;
-                    height: 73px;
+                    width: pxToRem(75px);
+                    height: pxToRem(73px);
                 }
             }
 
@@ -122,8 +119,8 @@
             }
 
             .inputname {
-                width: 305px;
-                height: 50px;
+                width: pxToRem(305px);
+                height: pxToRem(50px);
                 flex-shrink: 0;
                 background-color: $color_inputname;
                 border-radius: 10px;
@@ -148,8 +145,8 @@
             .cusinfor_form_select {
                 display: flex;
                 flex-direction: column;
-                width: 305px;
-                height: 50px;
+                width: pxToRem(305px);
+                height: pxToRem(50px);
                 background-color: $color_inputname;
                 border-radius: 10px;
                 margin-bottom: 120px;
@@ -167,13 +164,13 @@
                         margin-right: 3px;
 
                         .flag--svg {
-                            width: 40px;
-                            height: 40px;
+                            width: pxToRem(40px);
+                            height: pxToRem(40px);
                         }
                     }
 
                     .arrow--fg {
-                        height: 38px;
+                        height: pxToRem(38px);
                         display: flex;
                         justify-content: center;
                         align-items: center;
@@ -183,7 +180,7 @@
 
                     .phonenumber {
                         font-family: $fontMontserratRegular;
-                        font-size: 14px;
+                        font-size: pxToRem(14px);
                         font-style: normal;
                         font-weight: 500;
                         line-height: normal;
@@ -193,7 +190,7 @@
 
                 .cusinfor_form_select_button {
                     display: flex;
-                    width: 150px;
+                    width: pxToRem(150px);
                     height: 50px;
                     padding: 20px 70px;
                     justify-content: center;
@@ -252,3 +249,294 @@
         }
     }
 }
+@include tablet{
+    
+.cusinforsub {
+    width: 100%;
+    height: pxToRem(1376px);
+    position: absolute;
+    top: pxToRem(3500px);
+    .cusinfor {
+        padding: 5% 2%;
+        .cusinfor_line1 {
+            text-align: left;
+            margin-left: 10px;
+            margin-bottom: pxToRem(80px);
+            font-size: pxToRem(36px);
+            width: pxToRem(590px);
+            height: pxToRem(60px);
+        }
+        .cusinfor_image {
+            width: pxToRem(400px);
+            height: pxToRem(73px);
+            position: relative;
+            margin-bottom: 0;
+            .cusinfor_image_card {
+                width: pxToRem(380px);
+                height: pxToRem(480px);
+                .imagevaccine--fg {
+                    .imagevaccine--svg {
+                        width: pxToRem(380px);
+                        height: pxToRem(480px);
+                    }
+                }
+                .cusinfor_image_card_line1 {
+                    margin-left: 35%;
+                    font-size: pxToRem(20px);
+                    width: pxToRem(100px);
+                }
+
+                .link {
+                    bottom: 80px;
+                    margin-left: 25%;
+                }
+
+                .cusinfor_image_card_link {
+                    font-weight: 700;
+                    text-decoration: none;
+                    color: $color_white;
+                    font-size: pxToRem(20px);
+                    text-align: center;
+                    line-height: normal;
+                    font-style: normal;
+                }
+            }
+
+            .iconcorona--fg {
+                .iconcorona--svg {
+                    width: pxToRem(100px);
+                    height: pxToRem(95px);
+                }
+            }
+        }
+
+        .cusinfor_form {
+            margin-left: 7%;
+            margin-top: 500px;
+            .cusinfor_form_line {
+                font-size: pxToRem(20px);
+                margin-bottom: 20px;
+                margin-top: 20px;
+            }
+
+            .inputname {
+                width: pxToRem(650px);
+                height: pxToRem(70px);
+            }
+            .inputname::placeholder{
+                font-size: pxToRem(20px);
+            }
+            .cusinfor_form_line34 {
+                font-size: pxToRem(20px);
+                font-family: $fontMontserratRegular;
+            }
+
+            .cusinfor_form_select {
+                flex-direction: row;
+                width: pxToRem(400px);
+                height: pxToRem(70px);
+                background-color: $color_inputname;
+                border-radius:20px;
+                margin-bottom: 30px;
+
+                .cusinfor_form_select_flagnum {
+                    .flag--fg {
+                        margin-top: 15px;
+                    }
+
+                    .arrow--fg {
+                        height: pxToRem(40px);
+                        margin-right: 20px;
+                        margin-top: 10px;
+                        margin-left: 10px;
+                    }
+
+                    .phonenumber {
+                        font-family: $fontMontserratRegular;
+                        font-size: pxToRem(20px);
+                        width: 155px;
+                        margin-top: 10px;
+                    }
+                }
+
+                .cusinfor_form_select_button {
+                    display: flex;
+                    width: pxToRem(200px);
+                    height: 70px;
+                    border-radius: 20px;
+                    font-size: pxToRem(20px);
+                    margin-left: 200px;
+                }
+            }
+
+            .cusinfor_form_button {
+                display: flex;
+                width: 670px;
+                height: 70px;
+                font-size: pxToRem(20px);
+                border-radius: 20px;
+                margin-bottom: 20px;
+            }
+
+            .cusinfor_form_question {
+                display: flex;
+                margin-left: 15%;
+                .cfq1 {
+                    font-size: pxToRem(20px);                    
+                }
+                .cfq2{
+                    font-size: pxToRem(20px);
+                }
+            }
+        }
+    }
+}
+}
+
+@include desktop{
+    
+    .cusinforsub {
+        width: 100%;
+        height: pxToRem(750px);
+        position: absolute;
+        top: pxToRem(2400px);
+        .cusinfor {
+            padding: 1% 2%;
+            grid-template-columns: auto auto;
+            .cusinfor_line1 {
+                grid-column: 1;
+                margin-left: 90px;
+                margin-bottom: pxToRem(00px);
+                font-size: pxToRem(48px);
+                width: pxToRem(460px);
+                height: pxToRem(120px);
+            }
+            .cusinfor_image {
+                grid-column: 2 ;
+                grid-row: span 2;
+                width: pxToRem(400px);
+                height: pxToRem(73px);
+                position: relative;
+                margin-bottom: 0;
+                .cusinfor_image_card {
+                    width: pxToRem(380px);
+                    height: pxToRem(480px);
+                    .imagevaccine--fg {
+                        .imagevaccine--svg {
+                            width: pxToRem(380px);
+                            height: pxToRem(480px);
+                        }
+                    }
+                    .cusinfor_image_card_line1 {
+                        margin-left: 35%;
+                        font-size: pxToRem(20px);
+                        width: pxToRem(100px);
+                    }
+    
+                    .link {
+                        bottom: 80px;
+                        margin-left: 25%;
+                    }
+    
+                    .cusinfor_image_card_link {
+                        font-weight: 700;
+                        text-decoration: none;
+                        color: $color_white;
+                        font-size: pxToRem(20px);
+                        text-align: center;
+                        line-height: normal;
+                        font-style: normal;
+                    }
+                }
+    
+                .iconcorona--fg {
+                    .iconcorona--svg {
+                        width: pxToRem(100px);
+                        height: pxToRem(95px);
+                    }
+                }
+            }
+    
+            .cusinfor_form {
+                grid-column: 1;
+                margin-left: 7%;
+                margin-top: 0px;
+                .cusinfor_form_line {
+                    font-size: pxToRem(20px);
+                    margin-bottom: 20px;
+                    margin-top: 20px;
+                }
+    
+                .inputname {
+                    width: pxToRem(650px);
+                    height: pxToRem(70px);
+                }
+                .inputname::placeholder{
+                    font-size: pxToRem(20px);
+                }
+                .cusinfor_form_line34 {
+                    font-size: pxToRem(20px);
+                    font-family: $fontMontserratRegular;
+                }
+    
+                .cusinfor_form_select {
+                    flex-direction: row;
+                    width: pxToRem(400px);
+                    height: pxToRem(70px);
+                    background-color: $color_inputname;
+                    border-radius:20px;
+                    margin-bottom: 30px;
+    
+                    .cusinfor_form_select_flagnum {
+                        .flag--fg {
+                            margin-top: 15px;
+                        }
+    
+                        .arrow--fg {
+                            height: pxToRem(40px);
+                            margin-right: 20px;
+                            margin-top: 10px;
+                            margin-left: 10px;
+                        }
+    
+                        .phonenumber {
+                            font-family: $fontMontserratRegular;
+                            font-size: pxToRem(20px);
+                            width: 155px;
+                            margin-top: 10px;
+                        }
+                    }
+    
+                    .cusinfor_form_select_button {
+                        display: flex;
+                        width: pxToRem(200px);
+                        height: 70px;
+                        border-radius: 20px;
+                        font-size: pxToRem(20px);
+                        margin-left: 200px;
+                    }
+                }
+    
+                .cusinfor_form_button {
+                    display: flex;
+                    width: 670px;
+                    height: 70px;
+                    font-size: pxToRem(20px);
+                    border-radius: 20px;
+                    margin-bottom: 20px;
+                }
+    
+                .cusinfor_form_question {
+                    display: flex;
+                    margin-left: 15%;
+                    .cfq1 {
+                        font-size: pxToRem(20px);                    
+                    }
+                    .cfq2{
+                        font-size: pxToRem(20px);
+                    }
+                }
+            }
+        }
+    }
+    }

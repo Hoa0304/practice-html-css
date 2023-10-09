@@ -1,0 +1,54 @@
+@use "../abstracts/" as *;
+.virusBehavior{
+    font-family: $fontMontserrat;
+    position: absolute;
+    top: 3890px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    .virusBehaviorContent{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .vBC_line1{
+            color: $color_white;
+            font-size: pxToRem(12px);
+            text-align: center;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            margin-bottom: 10px;
+        }
+        .vBC_line2{
+            display: flex;
+            .textt{
+               font-size: pxToRem(24px);
+               font-weight: 800;
+               color: $color_white;
+               font-style: normal;
+               line-height: normal; 
+            }
+            .subline2_1{
+                color: $color_blue;
+            }
+            .subline2_2{
+                color: $color_white;
+                margin-left: 8px;
+            }
+        }
+        .vBC_para3{
+            width: 300px;
+        }
+    }
+    .virusBehaviorImage{
+        .imageperson--fg{
+            .imageperson--svg{
+                width: 225px;
+                height: 170px;
+            }
+        }
+    }
+}
