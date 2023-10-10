@@ -1,14 +1,14 @@
 @use "../abstracts/" as *;
 .virusBehavior{
     font-family: $fontMontserrat;
-    position: absolute;
-    top: 3890px;
+    margin-top: 10%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     width: 100%;
+    height: max-content;
     .virusBehaviorContent{
         display: flex;
         flex-direction: column;
@@ -40,14 +40,206 @@
             }
         }
         .vBC_para3{
-            width: 300px;
+            margin-top: 20px;
+            width: 276px;
+            height: 60px;
+            color: $color_initial_header;
+            font-size: pxToRem(12px);
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            font-family: $fontMontserratRegular;
+            text-align: center;
+            margin-bottom: 40px;
         }
     }
     .virusBehaviorImage{
+        position: relative;
+        width: 100%;
         .imageperson--fg{
             .imageperson--svg{
                 width: 225px;
                 height: 170px;
+            }
+        }
+        .virusdescription{
+            position: absolute;
+            bottom: 10%;
+            width: 100%;
+            .grid{
+                width: 100%;
+                display: grid;
+                grid-template-columns: auto auto;
+                .vd{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-bottom: 15px;
+                    .vdp{
+                        min-width: max-content;
+                        background-color: $color_sm_gray;
+                        height: 22px;
+                        border-radius: 5px;
+                        color: $color_blue;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: pxToRem(9px);
+                        line-height: normal;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-family: $fontMontserratRegular;
+                        padding: 3px 10px;
+                        margin-left: -10px;
+                    }
+                    .virus--svg{
+                       height: 32px;
+                       width: 32px;
+                    }
+                }
+                .virusdescription1{
+                    margin-left: 25%;
+                }
+                .virusdescription2{
+                   margin-left: 0;
+                }
+                .virusdescription3{
+                    margin-left: -10%;
+                }
+                .virusdescription4{
+                     margin-left: 30%;
+                }
+                .virusdescription5{
+                    margin-left: -20%;
+                }
+                .virusdescription6{
+                    margin-left: 40%;
+
+                }
+            }
+        }
+    }
+}
+@include tablet{
+    .virusBehavior{
+        .virusBehaviorContent{
+            .vBC_line1{
+                font-size: pxToRem(20px);
+                margin-bottom: 20px;
+                margin-top: -10%;
+            }
+            .vBC_line2{
+                .textt{
+                   font-size: pxToRem(36px);
+                }
+            }
+            .vBC_para3{
+                font-size: pxToRem(18px);
+                width: 550px;
+            }
+        }
+        .virusBehaviorImage{
+            .imageperson--fg{
+                .imageperson--svg{
+                    width:460px;
+                    height: 345px;
+                }
+            }
+            .virusdescription{
+                .grid{
+                    .vd{
+                        margin-bottom: 30px;
+                        .vdp{
+                            height: 45px;
+                            border-radius: 10px;
+                            font-size: pxToRem(18px);
+                            padding: 3px 30px;
+                            margin-left: -25px;
+                        }
+                        .virus--svg{
+                           height: 65px;
+                           width: 65px;
+                        }
+                    }
+                    .virusdescription1{
+                        margin-left: 10%;
+                    }
+                    .virusdescription2{
+                    }
+                    .virusdescription3{
+                        margin-left: -25%;
+                    }
+                    .virusdescription4{
+                    }
+                    .virusdescription5{
+                        margin-left: -25%;
+                    }
+                    .virusdescription6{
+                    }
+                }
+            }
+        }
+    }
+}
+@include desktop{
+    .virusBehavior{
+        top: 3200px;
+        .virusBehaviorContent{
+            .vBC_line1{
+                font-size: pxToRem(24px);
+                margin-bottom: 20px;
+                margin-top: -10%;
+            }
+            .vBC_line2{
+                .textt{
+                   font-size: pxToRem(48px);
+                }
+            }
+            .vBC_para3{
+                font-size: pxToRem(24px);
+                width: 953px;
+            }
+        }
+        .virusBehaviorImage{
+            .imageperson--fg{
+                .imageperson--svg{
+                    width:710px;
+                    height: 530px;
+                }
+            }
+            .virusdescription{
+                bottom: 0;
+                .grid{
+                    .vd{
+                        margin-bottom: 70px;
+                        .vdp{
+                            height: 70px;
+                            border-radius: 15px;
+                            font-size: pxToRem(20px);
+                            padding: 3px 50px;
+                            margin-left: -40px;
+                        }
+                        .virus--svg{
+                           height: 100px;
+                           width: 100px;
+                        }
+                    }
+                    .virusdescription1{
+                        margin-left: 10%;
+                    }
+                    .virusdescription2{
+                    }
+                    .virusdescription3{
+                        margin-left: -25%;
+                    }
+                    .virusdescription4{
+                    }
+                    .virusdescription5{
+                        margin-left: -45%;
+                    }
+                    .virusdescription6{
+                    }
+                }
             }
         }
     }

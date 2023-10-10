@@ -2,10 +2,9 @@
 @use '../abstracts/mixins' as * ;
 @use '../abstracts/variable' as *;
 .getinfor{
-    position: absolute;
-    top: pxToRem(818px);
-    left: 7%;
-    width: 93%;
+    margin-top: 12%;
+    margin-left: 3%;
+    width: auto;
     font-family: $fontMontserratRegular;
     .title_line1{
         display: inline-flex;
@@ -48,6 +47,7 @@
 }
 @include middle{
     .getinfor{
+        margin-left: 0;
         top: pxToRem(1235px);
         .title_line1{
             .clock--svg{

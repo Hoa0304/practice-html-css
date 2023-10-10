@@ -2,12 +2,10 @@
 
 .cusinforsub {
     width: 100%;
-    height: pxToRem(1095px);
     font-family: $fontMontserrat;
-    position: absolute;
-    top: pxToRem(2750px);
+    margin-top: 5%;
     background-color: $color_white;
-
+     
     .cusinfor {
         padding: 15% 2%;
         display: grid;
@@ -35,7 +33,7 @@
 
             .cusinfor_image_card {
                 position: relative;
-                margin-left: 15%;
+                margin-left: 5%;
                 padding: pxToRem(40px) 0 0 0;
                 margin-right: auto;
                 width: pxToRem(290px);
@@ -253,9 +251,7 @@
     
 .cusinforsub {
     width: 100%;
-    height: pxToRem(1376px);
-    position: absolute;
-    top: pxToRem(3500px);
+    height: pxToRem(1300px);
     .cusinfor {
         padding: 5% 2%;
         .cusinfor_line1 {
@@ -397,9 +393,7 @@
     
     .cusinforsub {
         width: 100%;
-        height: pxToRem(750px);
-        position: absolute;
-        top: pxToRem(2400px);
+        height: pxToRem(650px);
         .cusinfor {
             padding: 1% 2%;
             grid-template-columns: auto auto;
@@ -412,6 +406,7 @@
                 height: pxToRem(120px);
             }
             .cusinfor_image {
+                margin-top:10%;
                 grid-column: 2 ;
                 grid-row: span 2;
                 width: pxToRem(400px);

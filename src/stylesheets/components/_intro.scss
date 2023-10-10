@@ -3,9 +3,8 @@
 @use '../abstracts/variable' as *;
 .intro{
     font-family: $fontMontserrat;
-    position: absolute;
-    top: pxToRem(127px);
-    left: 6%;
+    margin-top: pxToRem(127px);
+    margin-left: 3%;
     right: auto;
     display: flex;
     flex-direction: column;
