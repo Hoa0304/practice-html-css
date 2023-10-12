@@ -1,9 +1,9 @@
 @mixin bg-img($bg: "") {
     background-image: url($bg);
-    background-repeat: no-repeat;
-    background-position: center;
+    // background-repeat: no-repeat;
+    // background-position: center;
     background-size: cover;
-    min-height: 100vh;
+    background-clip: border-box;
 }
 @mixin responsive($value1, $value2){
     @media screen and (min-width:$value1) and (max-width:$value2) {
@@ -11,19 +11,19 @@
     }
 }
 @mixin mobile {
-    @media screen and (max-width:414px) {
+    @media screen and (max-width:428px) {
         @content;
     }
 }
 
 @mixin middle {
-    @media screen and (min-width:414px) and (max-width:766px) {
+    @media screen and (min-width:429px) and (max-width:766px) {
         @content;
     }
 }
 
 @mixin tablet {
-    @media screen and (min-width:766px) and (max-width:1199px) {
+    @media screen and (min-width:767px) and (max-width:1199px) {
         @content;
     }
 }

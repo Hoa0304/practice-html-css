@@ -103,7 +103,7 @@ header {
         .checkstatus--right {
             position: absolute;
             display: block;
-            top: pxToRem(50px);
+            top: pxToRem(40px);
             color: $color_blue;
             font-size: pxToRem(24px);
             font-weight: 700;
@@ -134,7 +134,7 @@ header {
             display: block;
             position: absolute;
             top: pxToRem(60px);
-            margin-left: 30%;
+            margin-left: 35%;
             margin-right: auto;
             width: fit-content;
       
