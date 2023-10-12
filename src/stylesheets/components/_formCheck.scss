@@ -9,7 +9,7 @@
     height: 381px;
     border-radius: 20px;
     background-color: $color_background_checkstt;
-    
+
     .formCheck_line1 {
         width: 341px;
         height: 40px;
@@ -32,7 +32,7 @@
         justify-content: center;
         align-items: center;
         margin-top: 6%;
-        
+
         .formCheck_input_line1,
         .formCheck_input_line2 {
             width: pxToRem(280px);
@@ -83,18 +83,22 @@
             border-radius: 10px;
             border: 3px solid $color_blue;
             background-color: $color_background_checkstt;
-            margin-bottom: 15%;
+            margin-bottom: 5%;
             color: $color_blue;
         }
     }
 
     .formCheck_line2 {
+        
         color: $color_blue;
         text-align: center;
         font-size: pxToRem(10px);
         font-style: normal;
         font-weight: 700;
         line-height: normal;
+        .span{
+            width: 250px;
+        }
     }
 
     .out {
@@ -161,6 +165,9 @@
 
         .formCheck_line2 {
             font-size: pxToRem(14px);
+            .span{
+                width: 455px;
+            }
         }
 
         .out {
@@ -176,24 +183,26 @@
         top: 1250px;
         width: 1299px;
         height: 340px;
-          
+
         .formCheck_line1 {
             width: 1299px;
-height: 101px;
+            height: 101px;
             font-size: pxToRem(24px);
-            
+
         }
 
         .formCheck_input {
-             flex-direction: row;
-             margin-top: 3%;
-             padding-left: 25%;
-            
+            width: 1000px;
+            flex-direction: row;
+            margin-top: 3%;
+            padding-left: 10%;
+
             .formCheck_input_line1,
             .formCheck_input_line2 {
                 width: pxToRem(448px);
                 height: pxToRem(69px);
                 margin-left: 20px;
+               margin-bottom: 0;
             }
 
             .formCheck_input_line1::placeholder {
@@ -206,24 +215,27 @@ height: 101px;
             }
 
             .formCheck_input_button {
-                
+                margin-right: 0;
                 display: flex;
                 width: 172px;
                 height: 75px;
                 font-size: pxToRem(24px);
-                margin-bottom: 6%;
                 margin-left: 20px;
+                margin-bottom: 0;
             }
         }
 
         .formCheck_line2 {
             font-size: pxToRem(24px);
+            .span{
+                width: 785px;
+            }
         }
 
         .out {
             width: 1113px;
-            height: 70px;
-            margin-bottom: 5%;
+            height: 70px;    
+            margin-top: 30px;  
         }
 
     }
