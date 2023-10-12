@@ -1,0 +1,254 @@
+@use "../abstracts/" as *;
+
+.cusinforsub {
+    width: 100%;
+    height: 1095px;
+    font-family: $fontMontserrat;
+    position: absolute;
+    top: 2750px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: $color_white;
+
+    .cusinfor {
+        padding: 15% 2%;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: max-content;
+
+        .cusinfor_line1 {
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 40px;
+            color: $color_black;
+            font-size: pxToRem(24px);
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            width: 230px;
+            height: 60px;
+        }
+
+        .cusinfor_image {
+            width: 300px;
+            height: 73px;
+            position: relative;
+            margin-bottom: 30px;
+
+            .cusinfor_image_card {
+                position: relative;
+                margin-left: 15%;
+                padding: 40px 0 0 0;
+                margin-right: auto;
+                width: 290px;
+                height: 365px;
+                background: url("../assets/images/bgMobile.png");
+                border-radius: 20px;
+
+                .imagevaccine--fg {
+                    .imagevaccine--svg {
+                        width: 287px;
+                        height: 365px;
+                    }
+                }
+
+                .cusinfor_image_card_line1 {
+                    position: absolute;
+                    top: 30px;
+                    margin-left: 35%;
+                    color: $color_white;
+                    font-size: pxToRem(14px);
+                    text-align: center;
+                    line-height: normal;
+                    font-weight: 700;
+                    font-style: normal;
+                    width: 70px;
+                }
+
+                .link {
+                    position: absolute;
+                    bottom: 30px;
+                    left: 0;
+                    margin-left: 15%;
+                    width: 200px;
+                    height: 50px;
+                    background-color: $color-196_025;
+                    border-radius: 10px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .cusinfor_image_card_link {
+                    font-weight: 700;
+                    text-decoration: none;
+                    color: $color_white;
+                    font-size: pxToRem(14px);
+                    text-align: center;
+                    line-height: normal;
+                    font-style: normal;
+                }
+            }
+
+            .iconcorona--fg {
+                position: absolute;
+                top: -30px;
+                left: 30px;
+
+                .iconcorona--svg {
+                    width: 75px;
+                    height: 73px;
+                }
+            }
+
+        }
+
+        .cusinfor_form {
+            margin-left: 7%;
+            margin-top: 350px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            .cusinfor_form_line {
+                color: $color_black;
+                font-size: pxToRem(14px);
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                margin-bottom: 15px;
+                margin-top: 15px;
+            }
+
+            .inputname {
+                width: 305px;
+                height: 50px;
+                flex-shrink: 0;
+                background-color: $color_inputname;
+                border-radius: 10px;
+                border: 0;
+            }
+
+            .inputname::placeholder {
+                font-family: $fontMontserratRegular;
+                padding-left: 10%;
+            }
+
+            .cusinfor_form_line34 {
+                text-align: left;
+                color: $color_0_05;
+                font-size: pxToRem(14px);
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                margin-bottom: 20px;
+            }
+
+            .cusinfor_form_select {
+                display: flex;
+                flex-direction: column;
+                width: 305px;
+                height: 50px;
+                background-color: $color_inputname;
+                border-radius: 10px;
+                margin-bottom: 120px;
+
+                .cusinfor_form_select_flagnum {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    text-align: center;
+                    margin-bottom: 20px;
+
+                    .flag--fg {
+                        margin-left: 20px;
+                        margin-top: 6px;
+                        margin-right: 3px;
+
+                        .flag--svg {
+                            width: 40px;
+                            height: 40px;
+                        }
+                    }
+
+                    .arrow--fg {
+                        height: 38px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-right: 3px solid $color_0_01;
+                        margin-right: 20px;
+                    }
+
+                    .phonenumber {
+                        font-family: $fontMontserratRegular;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                        color: $color_0_025;
+                    }
+                }
+
+                .cusinfor_form_select_button {
+                    display: flex;
+                    width: 150px;
+                    height: 50px;
+                    padding: 20px 70px;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 10px;
+                    flex-shrink: 0;
+                    border-radius: 10px;
+                    border: 0;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    color: $color_white;
+                    font-size: pxToRem(14px);
+                    background-color: $color_blue;
+                }
+            }
+
+            .cusinfor_form_button {
+                display: flex;
+                width: 305px;
+                height: 50px;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                flex-shrink: 0;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                font-size: pxToRem(14px);
+                color: $color_white;
+                background-color: $color_blue;
+                border: 0;
+                border-radius: 10px;
+                margin-bottom: 20px;
+            }
+
+            .cusinfor_form_question {
+                display: flex;
+
+                .cfq1 {
+                    color: $color_0_05;
+                    font-size: pxToRem(14px);
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                    margin-right: 25px;
+                }
+                .cfq2{
+                    color: $color_blue;
+                    font-size: pxToRem(14px);
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                }
+            }
+        }
+    }
+}
