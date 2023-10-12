@@ -1,5 +1,6 @@
 @use '../abstracts/' as *;
-.banner{
+
+.banner {
     z-index: 1000;
     position: absolute;
     display: inline-flex;
@@ -7,7 +8,8 @@
     justify-content: center;
     background-color: $color_initial_header;
     left: -10%;
-    right: -70px;
+
+    width: 110%;
     &::before {
         content: '';
         position: absolute;
@@ -17,31 +19,106 @@
         width: 100%;
         height: 100%;
         background-color: white;
-      }
-    .moderna--svg{
+    }
+
+    .moderna--svg {
         margin-left: 10px;
-        width: 73px;
+        width: 70px;
         height: 17px;
         padding: 5px 0px;
     }
-    .pfizer--svg{
-        width: 72px;
+
+    .pfizer--svg {
+        width: 70px;
         height: 30px;
         padding: 5px 0px;
         margin-left: 12px;
 
     }
-    .astra--svg{
-        width: 73px;
-height: 21px;
-padding: 5px 0px;
-margin-left: 12px;
+
+    .astra--svg {
+        width: 70px;
+        height: 21px;
+        padding: 5px 0px;
+        margin-left: 12px;
     }
-    .sinovac--svg{
-        width: 73px;
-height: 15px;
-padding: 5px 0px;
-margin-left: 12px;
+
+    .sinovac--svg {
+        width: 70px;
+        height: 15px;
+        padding: 5px 0px;
+        margin-left: 12px;
     }
+
+}
+@include tablet{
     
+.banner {
+    width: 110%;
+    height: 80px;
+    
+    .moderna--svg {
+        margin-left: 10px;
+        width: 148px;
+        height: 34px;
+        padding: pxToRem(11px) 0;
+    }
+
+    .pfizer--svg {
+        width: 148px;
+        height: 60px;
+        margin-left: 24px;
+        padding: pxToRem(11px) 0;
+    }
+
+    .astra--svg {
+        width: 148px;
+        height: 42px;
+        margin-left: 24px;
+        padding: pxToRem(11px) 0;
+    }
+
+    .sinovac--svg {
+        width: 148px;
+        height: 30px;
+        margin-left: 24px;
+        margin-right: 24px;
+        padding: pxToRem(5px) 0;
+    }
+
+}
+}
+@include desktop{
+
+    .banner {
+        .moderna--svg {
+            margin-left: 10px;
+            width: 289px;
+            height: 66px;
+            padding: 41px 0px;
+        }
+    
+        .pfizer--svg {
+            width: 289px;
+            height: 119px;
+            padding: 41px 0px;
+            margin-left: 48px;
+    
+        }
+    
+        .astra--svg {
+            width: 289px;
+            height: 82px;
+            padding: 41px 0px;
+            margin-left: 48px;
+        }
+    
+        .sinovac--svg {
+            width: 289px;
+            height: 58px;
+            padding: 41px 0px;
+            margin-left: 48px;
+        }
+    
+    }
 }

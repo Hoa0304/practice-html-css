@@ -9,6 +9,7 @@
     right: auto;
     display: flex;
     flex-direction: column;
+    
     .intro_infor{
          width: pxToRem(290px);
         .infor_line1{
@@ -183,54 +184,6 @@
                 }
             }
         }
-        .intro_image{
-            width: pxToRem(560px);
-            margin-left: pxToRem(73px);
-            .catch_vaccine--fg{
-                .catch_vaccine--svg{
-                    width: pxToRem(532px);
-                height: pxToRem(571px);
-                }
-            }
-            .two-image{
-                height: pxToRem(100px);
-                width: pxToRem(100px);
-                border-radius: 20px;
-            }
-            .doctor--fg{
-                left: -45px;
-            }
-            .coronavirus--fg{
-               right: -22px;
-            }
-            .doctor--fg, .coronavirus--fg{
-                .center--svg{
-                    height: pxToRem(73px);
-                    width: pxToRem(80px);
-                }
-            }
-            .block_doctor{
-                width: pxToRem(374px);
-                height: pxToRem(100px);
-                bottom: -45px;
-                left: -40px;
-            .three_doctor{
-                .doctorf1--fg,.doctorf2--fg,.doctorf3--fg{
-                    .doctorf{
-                        width: pxToRem(60px);
-                        height: pxToRem(60px);
-                    }
-                }
-                
-            }
-            .block_doctor_content{
-                margin-left: 20px;
-                .content{
-                    font-size: pxToRem(24px);
-                }
-            }
-            }
-        }
     }
 }
 @include tablet{
@@ -318,6 +271,7 @@
     top: pxToRem(210px);
     left: 4%;
     flex-direction: row;
+     width: 96%;
     .intro_infor{
         width: pxToRem(630px);
         .infor_line1{
@@ -345,7 +299,7 @@
         }
     }
     .intro_image{
-        margin-left: 124px;
+        margin-left: 112px;
         width: 590px;
         .catch_vaccine--fg{
             .catch_vaccine--svg{
@@ -380,16 +334,12 @@
                         width: pxToRem(60px);
                         height: pxToRem(60px);
                     }
+                    
                 }
             }
             .block_doctor_content{
                 .content{
                     font-size: pxToRem(24px);
-                }
-                .block_doctor_content_line1{
-
-                }.block_doctor_content_line2{
-
                 }
             }
         }
