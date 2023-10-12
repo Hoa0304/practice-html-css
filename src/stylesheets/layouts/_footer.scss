@@ -1,0 +1,143 @@
+@use "../abstracts/" as *;
+
+.footer {
+    font-family: $fontMontserrat;
+    margin-top: 10%;
+    margin-left: 6%;
+
+    .footericonmenu {
+        color: $color_white;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        font-size: pxToRem(18px);
+        position: relative;
+        margin-bottom: 20px;
+    }
+
+    .footericonmenu::after {
+        content: "";
+        background-color: $color_blue;
+        height: 3px;
+        position: absolute;
+        width: 100px;
+        border-radius: 10px;
+        left: 0;
+        bottom: 0;
+        top: 25px;
+    }
+
+    .nav {
+        margin-top: 10px;
+        font-family: $fontMontserratRegular;
+
+        .theul {
+            .theli {
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                font-size: pxToRem(14px);
+                color: $color_initial_header;
+                margin-bottom: 5%;
+            }
+            .theli:nth-child(1){
+                color: $color_white;
+                font-family: $fontMontserrat;
+            }
+        }
+    }
+    .icon{
+        display: flex;
+        margin-bottom: 5%;
+        .icon--fg{
+            margin-right: 3px;
+            .icon--svg{
+                width: 18px;
+                height: 18px;
+            }
+        }
+    }
+}
+@include tablet{
+    .footer {
+        .footericonmenu {
+            font-size: pxToRem(26px);
+        }
+    
+        .footericonmenu::after {
+            height: 5px;
+            width: 130px;
+            left: 0;
+            bottom: 0;
+            top: 40px;
+        }
+    
+        .nav {
+            margin-top: 40px;
+            font-family: $fontMontserratRegular;
+            
+            .theul {
+                display: flex;
+                .theli {
+                    font-size: pxToRem(20px);
+                    margin-bottom: 5%;
+                    margin-right: 5%;
+                }
+            }
+        }
+        .icon{
+            .icon--fg{
+                margin-right: 3px;
+                .icon--svg{
+                    width: 32px;
+                    height: 32px;
+                }
+            }
+        }
+    }
+}
+@include desktop{
+    .footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-bottom:10%;
+        .footericonmenu {
+            font-size: pxToRem(32px);
+        }
+    
+        .footericonmenu::after {
+            height: 5px;
+            width: 130px;
+            left: 0;
+            bottom: 0;
+            top: 40px;
+        }
+    
+        .nav {
+            margin-top: 40px;
+            font-family: $fontMontserratRegular;
+            
+            .theul {
+                display: flex;
+                width: 520px;
+                .theli {
+                    font-size: pxToRem(24px);
+                    margin-bottom: 5%;
+                    margin-right: 5%;
+                }
+            }
+        }
+        .icon{
+            margin-bottom: 0;
+            .icon--fg{
+                margin-right: 3px;
+                .icon--svg{
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+        }
+    }
+
+}

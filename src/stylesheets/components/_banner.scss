@@ -7,9 +7,9 @@
     align-items: center;
     justify-content: center;
     background-color: $color_initial_header;
-    left: -10%;
+    
 
-    width: 110%;
+    width: 100%;
     &::before {
         content: '';
         position: absolute;
@@ -54,7 +54,7 @@
 @include tablet{
     
 .banner {
-    width: 110%;
+    width: 100%;
     height: 80px;
     
     .moderna--svg {
@@ -91,33 +91,35 @@
 @include desktop{
 
     .banner {
+        
+    width: 100%;
+    height: 140px;
         .moderna--svg {
-            margin-left: 10px;
-            width: 289px;
+            margin-left: 20px;
+            width: 270px;
             height: 66px;
-            padding: 41px 0px;
         }
     
         .pfizer--svg {
-            width: 289px;
+            width: 270px;
             height: 119px;
             padding: 41px 0px;
-            margin-left: 48px;
+            margin-left: 20px;
     
         }
     
         .astra--svg {
-            width: 289px;
+            width: 270px;
             height: 82px;
             padding: 41px 0px;
-            margin-left: 48px;
+            margin-left: 20px;
         }
     
         .sinovac--svg {
-            width: 289px;
+            width: 270px;
             height: 58px;
             padding: 41px 0px;
-            margin-left: 48px;
+            margin-left: 20px;
         }
     
     }
