@@ -1,16 +1,18 @@
-@use '../abstracts/functions' as *;
-@use '../abstracts/mixins' as * ;
-@use '../abstracts/variable' as *;
+@use '../abstracts/' as *;
+
 .intro{
     font-family: $fontMontserrat;
     margin-top: pxToRem(127px);
-    margin-left: 3%;
     right: auto;
     display: flex;
     flex-direction: column;
-    
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
     .intro_infor{
-         width: pxToRem(290px);
+        margin-left: 0%;
+        width: 90%;
         .infor_line1{
             font-size: pxToRem(12px);
             color: $color_blue;
@@ -39,6 +41,7 @@
             margin-bottom: pxToRem(40px);
         }
         .intro_block_button{
+            width: 100%;
             margin-bottom: pxToRem(50px);
             .button--left{
                 display: inline-flex;
@@ -52,7 +55,7 @@
                 box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
                 color: $color_white;
                 gap: pxToRem(10px);
-                margin-right: 5px;
+                
             }
             .button--right{
                 display: inline-flex;
@@ -75,9 +78,17 @@
         }
     }
     .intro_image{
-         width: pxToRem(280px);
-        margin-left: 20px;
+        
+         width: 100%;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+        .intro_images{
+            margin-left:0%;
+            width: pxToRem(280px);
+       
         position: relative;
+        }
         .catch_vaccine--fg{
             .catch_vaccine--svg{
                 width: pxToRem(256px);
@@ -98,7 +109,7 @@
            display: inline-flex;
         }
         .doctor--fg{
-            left: -25px;
+           left: -25px; 
         }
         .coronavirus--fg{
             right: 2px;
@@ -153,42 +164,42 @@
     }
     
 }
-@include middle{
-    .intro{
-        .intro_infor{
-            width: pxToRem(520px);
-            .infor_line1{
-                font-size: pxToRem(20px);
+// @include middle{
+//     .intro{
+//         .intro_infor{
+//             width: pxToRem(520px);
+//             .infor_line1{
+//                 font-size: pxToRem(20px);
                 
-            }
-            .infor_line234{
-                font-size: pxToRem(36px);
-                width: pxToRem(415px);
-                margin-top: pxToRem(40px);
-                margin-bottom: pxToRem(40px);
-            }
-            .infor_line567{
-                font-size: pxToRem(20px);
-                width: pxToRem(520px);
-            }
-            .intro_block_button{
-                .button--left{
-                    font-size: pxToRem(20px);
-                    height: pxToRem(64px);
-                    margin-right: 10px;
-                }
-                .button--right{
-                    font-size: pxToRem(20px);
-                    height: pxToRem(64px);
-                }
-            }
-        }
-    }
-}
+//             }
+//             .infor_line234{
+//                 font-size: pxToRem(36px);
+//                 width: pxToRem(415px);
+//                 margin-top: pxToRem(40px);
+//                 margin-bottom: pxToRem(40px);
+//             }
+//             .infor_line567{
+//                 font-size: pxToRem(20px);
+//                 width: pxToRem(520px);
+//             }
+//             .intro_block_button{
+//                 .button--left{
+//                     font-size: pxToRem(20px);
+//                     height: pxToRem(64px);
+//                     margin-right: 10px;
+//                 }
+//                 .button--right{
+//                     font-size: pxToRem(20px);
+//                     height: pxToRem(64px);
+//                 }
+//             }
+//         }
+//     }
+// }
 @include tablet{
     .intro{
         .intro_infor{
-            width: pxToRem(520px);
+             margin-left: 10%;
             .infor_line1{
                 font-size: pxToRem(20px);
                 
@@ -216,8 +227,11 @@
             }
         }
         .intro_image{
+            .intro_images{
+            margin-left: 0;
             width: pxToRem(560px);
             margin-left: pxToRem(73px);
+            }
             .catch_vaccine--fg{
                 .catch_vaccine--svg{
                     width: pxToRem(532px);
@@ -265,13 +279,51 @@
         }
     }
 }
+
+@include middle{
+    .intro{
+        width: 100%;
+        .intro_infor{
+            width: 90%;
+            margin-left: 2%;
+            .infor_line1{
+                font-size: pxToRem(20px);
+                width: 80%;
+            }
+            .infor_line234{
+                font-size: pxToRem(36px);
+                width: pxToRem(415px);
+                margin-top: pxToRem(40px);
+                margin-bottom: pxToRem(40px);
+            }
+            .infor_line567{
+                font-size: pxToRem(20px);
+                width: pxToRem(400px);
+            }
+            .intro_block_button{
+                .button--left{
+                    font-size: pxToRem(20px);
+                    height: pxToRem(64px);
+                    margin-right: 10px;
+                }
+                .button--right{
+                    font-size: pxToRem(20px);
+                    height: pxToRem(64px);
+                }
+            }
+        }
+       
+    }
+}
 @include desktop{
    .intro{
     top: pxToRem(210px);
     left: 4%;
     flex-direction: row;
-     width: 96%;
+     width: 100%;
+     justify-content: space-around;
     .intro_infor{
+        margin-left: 3%;
         width: pxToRem(630px);
         .infor_line1{
            font-size: pxToRem(24px);
@@ -298,8 +350,12 @@
         }
     }
     .intro_image{
-        margin-left: 112px;
+        width: 80%;
+        .intro_images{
+            margin-left: 112px;
         width: 590px;
+        }
+        
         .catch_vaccine--fg{
             .catch_vaccine--svg{
                 width: pxToRem(533px);
