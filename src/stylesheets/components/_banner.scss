@@ -7,8 +7,6 @@
     align-items: center;
     justify-content: center;
     background-color: $color_initial_header;
-    
-
     width: 100%;
     &::before {
         content: '';
@@ -23,29 +21,29 @@
 
     .moderna--svg {
         margin-left: 10px;
-        width: 70px;
-        height: 17px;
+        width: pxToRem(70px);
+        height: pxToRem(17px);
         padding: 5px 0px;
     }
 
     .pfizer--svg {
-        width: 70px;
-        height: 30px;
+        width: pxToRem(70px);
+        height: pxToRem(30px);
         padding: 5px 0px;
         margin-left: 12px;
 
     }
 
     .astra--svg {
-        width: 70px;
-        height: 21px;
+        width: pxToRem(70px);
+        height: pxToRem(21px);
         padding: 5px 0px;
         margin-left: 12px;
     }
 
     .sinovac--svg {
-        width: 70px;
-        height: 15px;
+        width: pxToRem(70px);
+        height: pxToRem(15px);
         padding: 5px 0px;
         margin-left: 12px;
     }
@@ -55,32 +53,32 @@
     
 .banner {
     width: 100%;
-    height: 80px;
+    height: pxToRem(80px);
     
     .moderna--svg {
         margin-left: 10px;
-        width: 148px;
-        height: 34px;
+        width: pxToRem(148px);
+        height: pxToRem(34px);
         padding: pxToRem(11px) 0;
     }
 
     .pfizer--svg {
-        width: 148px;
-        height: 60px;
+        width: pxToRem(148px);
+        height: pxToRem(60px);
         margin-left: 24px;
         padding: pxToRem(11px) 0;
     }
 
     .astra--svg {
-        width: 148px;
-        height: 42px;
+        width: pxToRem(148px);
+        height: pxToRem(42px);
         margin-left: 24px;
         padding: pxToRem(11px) 0;
     }
 
     .sinovac--svg {
-        width: 148px;
-        height: 30px;
+        width: pxToRem(148px);
+        height: pxToRem(30px);
         margin-left: 24px;
         margin-right: 24px;
         padding: pxToRem(5px) 0;
@@ -93,31 +91,31 @@
     .banner {
         
     width: 100%;
-    height: 140px;
+    height: pxToRem(140px);
         .moderna--svg {
             margin-left: 20px;
-            width: 270px;
-            height: 66px;
+            width: pxToRem(270px);
+            height: pxToRem(66px);
         }
     
         .pfizer--svg {
-            width: 270px;
-            height: 119px;
+            width: pxToRem(270px);
+            height: pxToRem(119px);
             padding: 41px 0px;
             margin-left: 20px;
     
         }
     
         .astra--svg {
-            width: 270px;
-            height: 82px;
+            width: pxToRem(270px);
+            height: pxToRem(82px);
             padding: 41px 0px;
             margin-left: 20px;
         }
     
         .sinovac--svg {
-            width: 270px;
-            height: 58px;
+            width: pxToRem(270px);
+            height: pxToRem(58px);
             padding: 41px 0px;
             margin-left: 20px;
         }
