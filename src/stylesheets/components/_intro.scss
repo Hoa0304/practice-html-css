@@ -98,7 +98,8 @@
         }
         .two-image{
            position: absolute;
-           top: 40%;
+           top: 50%;
+           
            background-color: $color_white;
            border-radius: 10px;
            height: pxToRem(50px);
@@ -109,7 +110,7 @@
            display: inline-flex;
         }
         .doctor--fg{
-           left: -25px; 
+            left: -25px;
         }
         .coronavirus--fg{
             right: 2px;
