@@ -19,7 +19,7 @@
 - HTML5/CSS3
 - Sass
 - Parcel
-- Parcel/transformer-sass
+- Postcss
 - Posthtml-include
 - Posthtml-doctype
 - Nodejs - Nodemodule
@@ -30,7 +30,7 @@
 
 ## SOURCE CODE
 
-- To start: Clone project : git clone [git](https://github.com/Hoa0304/html-css-practice.git)
+- To start: Clone project : git clone [git](https://github.com/Hoa0304/practice-html-css.git)
 
 ## HOW TO RUN
 
@@ -39,8 +39,6 @@
 
 ```sh
 npm install
-npm i parcel
-npm i parcel-bundler
-npm run dev or npm run builder
+npm run dev 
 Open on web: http://localhost:1234
 ```
