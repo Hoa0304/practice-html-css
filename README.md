@@ -34,7 +34,7 @@
 
 ## HOW TO RUN
 
-- Dillinger requires [Node.js](https://nodejs.org/) v18 + to run.
+- Dillinger requires [Node.js](https://nodejs.org/) v12 + to run.
 
 
 ```sh
