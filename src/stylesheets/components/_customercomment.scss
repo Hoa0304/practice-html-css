@@ -216,9 +216,8 @@
                             text-align: center;
                             width: pxToRem(366px);
                             color: $color_0_06;
-                            @include font($secondary-font,18px,500);
+                            @include font($primary-font,18px,500);
                             line-height: normal;
-                            font-family: $fontMontserratRegular;
                             margin-left: 20px;
                             margin-top: 40px;
                         }
