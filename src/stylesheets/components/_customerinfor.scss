@@ -2,7 +2,6 @@
 
 .cusinforsub {
     width: 100%;
-    font-family: $fontMontserrat;
     margin-top: 5%;
     background-color: $color_white;
      
@@ -17,9 +16,7 @@
             margin-right: auto;
             margin-bottom: pxToRem(40px);
             color: $color_black;
-            font-size: pxToRem(24px);
-            font-style: normal;
-            font-weight: 700;
+            @include font($secondary-font,24px,700);
             line-height: normal;
             width: pxToRem(230px);
             height: pxToRem(60px);
@@ -53,11 +50,9 @@
                     top: 30px;
                     margin-left: 35%;
                     color: $color_white;
-                    font-size: pxToRem(14px);
                     text-align: center;
                     line-height: normal;
-                    font-weight: 700;
-                    font-style: normal;
+                    @include font($secondary-font,14px,700);
                     width: pxToRem(70px);
                 }
 
@@ -76,10 +71,9 @@
                 }
 
                 .cusinfor_image_card_link {
-                    font-weight: 700;
                     text-decoration: none;
                     color: $color_white;
-                    font-size: pxToRem(14px);
+                    @include font($secondary-font,14px,700);
                     text-align: center;
                     line-height: normal;
                     font-style: normal;
@@ -108,9 +102,7 @@
 
             .cusinfor_form_line {
                 color: $color_black;
-                font-size: pxToRem(14px);
-                font-style: normal;
-                font-weight: 700;
+                @include font($secondary-font,14px,700);
                 line-height: normal;
                 margin-bottom: 15px;
                 margin-top: 15px;
@@ -126,16 +118,14 @@
             }
 
             .inputname::placeholder {
-                font-family: $fontMontserratRegular;
+                font-family: $primary-font;
                 padding-left: 10%;
             }
 
             .cusinfor_form_line34 {
                 text-align: left;
                 color: $color_0_05;
-                font-size: pxToRem(14px);
-                font-style: normal;
-                font-weight: 500;
+                @include font($secondary-font,14px,500);
                 line-height: normal;
                 margin-bottom: 20px;
             }
@@ -181,10 +171,7 @@
                     }
 
                     .phonenumber {
-                        font-family: $fontMontserratRegular;
-                        font-size: pxToRem(14px);
-                        font-style: normal;
-                        font-weight: 500;
+                        @include font($primary-font,14px,500);
                         line-height: normal;
                         color: $color_0_025;
                         height: 48px;
@@ -207,11 +194,9 @@
                     flex-shrink: 0;
                     border-radius: 10px;
                     border: 0;
-                    font-style: normal;
-                    font-weight: 700;
+                    @include font($secondary-font,14px,700);
                     line-height: normal;
                     color: $color_white;
-                    font-size: pxToRem(14px);
                     background-color: $color_blue;
                 }
             }
@@ -224,10 +209,8 @@
                 align-items: center;
                 gap: 10px;
                 flex-shrink: 0;
-                font-style: normal;
-                font-weight: 700;
                 line-height: normal;
-                font-size: pxToRem(14px);
+                @include font($secondary-font,14px,700);
                 color: $color_white;
                 background-color: $color_blue;
                 border: 0;
@@ -240,17 +223,13 @@
 
                 .cfq1 {
                     color: $color_0_05;
-                    font-size: pxToRem(14px);
-                    font-style: normal;
-                    font-weight: 600;
+                    @include font($secondary-font,14px,600);
                     line-height: normal;
                     margin-right: 25px;
                 }
                 .cfq2{
                     color: $color_blue;
-                    font-size: pxToRem(14px);
-                    font-style: normal;
-                    font-weight: 700;
+                    @include font($secondary-font,14px,700);
                     line-height: normal;
                 }
             }
@@ -268,7 +247,7 @@
             text-align: left;
             margin-left: 10px;
             margin-bottom: pxToRem(80px);
-            font-size: pxToRem(36px);
+            @include font($secondary-font,36px);
             width: pxToRem(590px);
             height: pxToRem(60px);
         }
@@ -288,7 +267,7 @@
                 }
                 .cusinfor_image_card_line1 {
                     margin-left: 35%;
-                    font-size: pxToRem(20px);
+                    @include font($secondary-font,20px);
                     width: pxToRem(100px);
                 }
 
@@ -298,13 +277,11 @@
                 }
 
                 .cusinfor_image_card_link {
-                    font-weight: 700;
                     text-decoration: none;
                     color: $color_white;
-                    font-size: pxToRem(20px);
+                    @include font($secondary-font,20px,700);
                     text-align: center;
                     line-height: normal;
-                    font-style: normal;
                 }
             }
 
@@ -320,7 +297,7 @@
             margin-left: 7%;
             margin-top: 500px;
             .cusinfor_form_line {
-                font-size: pxToRem(20px);
+                @include font($secondary-font,20px);
                 margin-bottom: 20px;
                 margin-top: 20px;
             }
@@ -330,11 +307,10 @@
                 height: pxToRem(70px);
             }
             .inputname::placeholder{
-                font-size: pxToRem(20px);
+                @include font($secondary-font,20px);
             }
             .cusinfor_form_line34 {
-                font-size: pxToRem(20px);
-                font-family: $fontMontserratRegular;
+                @include font($primary-font,20px);
             }
 
             .cusinfor_form_select {
@@ -362,8 +338,7 @@
                     }
 
                     .phonenumber {
-                        font-family: $fontMontserratRegular;
-                        font-size: pxToRem(20px);
+                        @include font($primary-font,20px);
                         width: 155px;
                         margin-top: 10px;
                     }
@@ -374,7 +349,7 @@
                     width: pxToRem(200px);
                     height: 70px;
                     border-radius: 20px;
-                    font-size: pxToRem(20px);
+                    @include font($secondary-font,20px);
                     margin-left: 200px;
                 }
             }
@@ -383,7 +358,7 @@
                 display: flex;
                 width: 670px;
                 height: 70px;
-                font-size: pxToRem(20px);
+                @include font($secondary-font,20px);
                 border-radius: 20px;
                 margin-bottom: 20px;
             }
@@ -392,10 +367,10 @@
                 display: flex;
                 margin-left: 15%;
                 .cfq1 {
-                    font-size: pxToRem(20px);                    
+                    @include font($secondary-font,20px);
                 }
                 .cfq2{
-                    font-size: pxToRem(20px);
+                    @include font($secondary-font,20px);
                 }
             }
         }
@@ -415,7 +390,7 @@
                 grid-column: 1;
                 margin-left: 90px;
                 margin-bottom: pxToRem(00px);
-                font-size: pxToRem(48px);
+                @include font($secondary-font,48px);
                 width: pxToRem(460px);
                 height: pxToRem(120px);
             }
@@ -438,7 +413,7 @@
                     }
                     .cusinfor_image_card_line1 {
                         margin-left: 35%;
-                        font-size: pxToRem(20px);
+                        @include font($secondary-font,20px);
                         width: pxToRem(100px);
                     }
     
@@ -448,13 +423,11 @@
                     }
     
                     .cusinfor_image_card_link {
-                        font-weight: 700;
                         text-decoration: none;
                         color: $color_white;
-                        font-size: pxToRem(20px);
+                        @include font($secondary-font,20px,700);
                         text-align: center;
                         line-height: normal;
-                        font-style: normal;
                     }
                 }
     
@@ -471,7 +444,7 @@
                 margin-left: 7%;
                 margin-top: 0px;
                 .cusinfor_form_line {
-                    font-size: pxToRem(20px);
+                    @include font($secondary-font,20px);
                     margin-bottom: 20px;
                     margin-top: 20px;
                 }
@@ -481,11 +454,10 @@
                     height: pxToRem(70px);
                 }
                 .inputname::placeholder{
-                    font-size: pxToRem(20px);
+                    @include font($secondary-font,20px);
                 }
                 .cusinfor_form_line34 {
-                    font-size: pxToRem(20px);
-                    font-family: $fontMontserratRegular;
+                    @include font($primary-font,20px);
                 }
     
                 .cusinfor_form_select {
@@ -513,8 +485,7 @@
                         }
     
                         .phonenumber {
-                            font-family: $fontMontserratRegular;
-                            font-size: pxToRem(20px);
+                            @include font($primary-font,20px);
                             width: 155px;
                             margin-top: 10px;
                         }
@@ -525,7 +496,7 @@
                         width: pxToRem(200px);
                         height: 70px;
                         border-radius: 20px;
-                        font-size: pxToRem(20px);
+                        @include font($secondary-font,20px);
                         margin-left: 200px;
                     }
                 }
@@ -534,7 +505,7 @@
                     display: flex;
                     width: 670px;
                     height: 70px;
-                    font-size: pxToRem(20px);
+                    @include font($secondary-font,20px);
                     border-radius: 20px;
                     margin-bottom: 20px;
                 }
@@ -543,10 +514,10 @@
                     display: flex;
                     margin-left: 15%;
                     .cfq1 {
-                        font-size: pxToRem(20px);                    
+                        @include font($secondary-font,20px);
                     }
                     .cfq2{
-                        font-size: pxToRem(20px);
+                        @include font($secondary-font,20px);
                     }
                 }
             }

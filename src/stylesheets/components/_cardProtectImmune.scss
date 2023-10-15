@@ -29,22 +29,17 @@
         height: 34px;
         flex-shrink: 0;
         color: $color_blue;
-        font-size: pxToRem(14px);
-        font-style: normal;
-        font-weight: 700;
+        @include font($secondary-font,14px,700);
         line-height: normal;
         margin-bottom: 20px;
     }
 
     .cardProtect_line2 {
-        font-family: $fontMontserratRegular;
+        @include font($primary-font,12px,500);
         width: 235px;
         height: 61px;
         flex-shrink: 0;
         color: $color_white;
-        font-size: pxToRem(12px);
-        font-style: normal;
-        font-weight: 500;
         line-height: normal;
     }
 
@@ -55,9 +50,7 @@
 
         .cardProtect_readmore_content {
             color: $color_blue;
-            font-size: pxToRem(12px);
-            font-style: normal;
-            font-weight: 700;
+            @include font($secondary-font,12px,700);
             line-height: normal;
         }
 
@@ -92,7 +85,7 @@
         .cardProtect_line1 {
             width: 300px;
             height: 58px;
-            font-size: pxToRem(24px);
+            @include font($secondary-font,24px);
             margin-bottom: 40px;
         }
         .cardProtect_line2 {
@@ -105,7 +98,7 @@
             margin-top: 60px;
     
             .cardProtect_readmore_content {
-                font-size: pxToRem(18px);
+                @include font($secondary-font,18px);
             }
     
             .cardProtect_readmore--fg {
@@ -135,20 +128,20 @@
         .cardProtect_line1 {
             width: 300px;
             height: 58px;
-            font-size: pxToRem(24px);
+            @include font($secondary-font,24px);
             margin-bottom: 40px;
         }
         .cardProtect_line2 {
             width: 352px;
             height: 90px;
-            font-size: pxToRem(18px);
+            @include font($secondary-font,18px);
         }
     
         .cardProtect_readmore {
             margin-top: 60px;
     
             .cardProtect_readmore_content {
-                font-size: pxToRem(18px);
+                @include font($secondary-font,18px);
             }
     
             .cardProtect_readmore--fg {

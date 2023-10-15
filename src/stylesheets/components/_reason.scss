@@ -1,27 +1,21 @@
-@use '../abstracts/functions' as *;
-@use '../abstracts/mixins' as *;
-@use '../abstracts/variable' as *;
+@use '../abstracts/' as *;
 
 .getV {
     margin-top: 5%;
     margin-left: 3%;
-    font-family: $fontMontserrat;
 
     .getV_content {
         .getV_content_line1 {
             flex-shrink: 0;
             color: $color_white;
-            font-size: pxToRem(24px);
+            @include font($secondary-font,24px);
             margin-bottom: 15px;
         }
 
         .getV_content_para2 {
-            font-family: $fontMontserratRegular;
-            font-size: pxToRem(14px);
-            font-style: normal;
+            @include font($primary-font,14px,400);
             line-height: normal;
             color: $color_initial_header;
-            font-weight: 400;
             margin-bottom: 40px;
             width: 300px;
             
@@ -64,10 +58,8 @@
                 height: 36px;
                 flex-shrink: 0;
                 color: $color_white;
-                font-size: pxToRem(14px);
-                font-weight: 700;
+                @include font($secondary-font,14px,700);
                 line-height: normal;
-                font-style: normal;
             }
 
             .card_mini_card_readmore {
@@ -78,9 +70,7 @@
                 .card_mini_card_readmore_content {
 
                     color: $color_initial_header;
-                    font-size: pxToRem(14px);
-                    font-style: normal;
-                    font-weight: 700;
+                    @include font($secondary-font,14px,700);
                     line-height: normal;
                 }
 
@@ -102,13 +92,13 @@
         margin-top: 50%;
         .getV_content {
             .getV_content_line1 {
-                font-size: pxToRem(36px);
+                @include font($secondary-font,36px);
                 margin-bottom: 40px;
                 width: 504px;
                 height: 84px;
             }
             .getV_content_para2 {
-                font-size: pxToRem(20px);
+                @include font($secondary-font,20px);
                 color: $color_initial_header;
                 margin-bottom: 40px;
                 width: 537px;
@@ -141,12 +131,12 @@
                 .card_mini_card_line1 {
                     width: 240px;
                     height: 58px;
-                    font-size: pxToRem(20px);
+                    @include font($secondary-font,20px);
                 }
                 .card_mini_card_readmore {
                     margin-top: 30px;
                     .card_mini_card_readmore_content {
-                        font-size: pxToRem(18px);
+                        @include font($secondary-font,18px);
                     }
                     .card_mini_card_readmore_icon--fg {
                         .card_mini_card_readmore_icon--svg {
@@ -167,14 +157,14 @@
             .getV_content {
                 display: flex;
                 .getV_content_line1 {
-                    font-size: pxToRem(36px);
+                    @include font($secondary-font,36px);
                     margin-bottom: 40px;
                     width: 504px;
                     height: 84px;
                 }
                 .getV_content_para2 {
                     margin-left: 20%;
-                    font-size: pxToRem(20px);
+                    @include font($secondary-font,20px);
                     color: $color_initial_header;
                     margin-bottom: 40px;
                     width: 537px;
@@ -208,12 +198,12 @@
                     .card_mini_card_line1 {
                         width: 240px;
                         height: 58px;
-                        font-size: pxToRem(20px);
+                        @include font($secondary-font,20px);
                     }
                     .card_mini_card_readmore {
                         margin-top: 30px;
                         .card_mini_card_readmore_content {
-                            font-size: pxToRem(18px);
+                            @include font($secondary-font,18px);
                         }
                         .card_mini_card_readmore_icon--fg {
                             .card_mini_card_readmore_icon--svg {

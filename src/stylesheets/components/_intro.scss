@@ -1,7 +1,6 @@
 @use '../abstracts/' as *;
 
 .intro{
-    font-family: $fontMontserrat;
     margin-top: pxToRem(127px);
     right: auto;
     display: flex;
@@ -14,30 +13,24 @@
         margin-left: 0%;
         width: 90%;
         .infor_line1{
-            font-size: pxToRem(12px);
+            @include font($secondary-font,12px,700);
             color: $color_blue;
-            font-weight: 700;
-            font-style: normal;
             line-height: normal;
         }
         .infor_line234{
-            font-size: pxToRem(24px);
+            @include font($secondary-font,12px,800);
             color: $color_white;
-            font-weight: 800;
             margin-top: pxToRem(20px);
             line-height: normal;
-            font-style: normal;
             margin-bottom: pxToRem(20px);
             .infor_line234--clblue{
                 color: $color_blue;
             }
         }
         .infor_line567{
-            font-size: pxToRem(14px);
+            @include font($secondary-font,14px,700);
             color: $color_gray_opa7;
-            font-weight: 700;
             line-height: normal;
-            font-style: normal;
             margin-bottom: pxToRem(40px);
         }
         .intro_block_button{
@@ -49,7 +42,7 @@
                 padding: pxToRem(20px) pxToRem(25px);
                 justify-content: center;
                 align-items: center;
-                font-family: $fontMontserrat;
+                @include font($secondary-font,14px,700);
                 background-color: $color_blue;
                 border-radius: 20px;
                 box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
@@ -68,10 +61,7 @@
                 border-radius: 20px;
                 background-color: $color_background_checkstt;
                 border: 2px solid $color_blue;
-                font-family: $fontMontserrat;
-                font-size: pxToRem(14px);
-                font-weight: 700;
-                font-style: normal;
+                @include font($secondary-font,14px,700);
                 line-height: normal;
                 color: $color_white;
             }
@@ -99,7 +89,6 @@
         .two-image{
            position: absolute;
            top: 50%;
-           
            background-color: $color_white;
            border-radius: 10px;
            height: pxToRem(50px);
@@ -149,10 +138,8 @@
             .block_doctor_content{
                 margin-left: 10px;
                 .content{
-                    font-size: pxToRem(14px);
-                    font-style: normal;
+                    @include font($secondary-font,14px,700);
                     line-height: normal;
-                    font-weight: 700;
                 }
                 .block_doctor_content_line1{
                     color: $color_white;
@@ -165,64 +152,33 @@
     }
     
 }
-// @include middle{
-//     .intro{
-//         .intro_infor{
-//             width: pxToRem(520px);
-//             .infor_line1{
-//                 font-size: pxToRem(20px);
-                
-//             }
-//             .infor_line234{
-//                 font-size: pxToRem(36px);
-//                 width: pxToRem(415px);
-//                 margin-top: pxToRem(40px);
-//                 margin-bottom: pxToRem(40px);
-//             }
-//             .infor_line567{
-//                 font-size: pxToRem(20px);
-//                 width: pxToRem(520px);
-//             }
-//             .intro_block_button{
-//                 .button--left{
-//                     font-size: pxToRem(20px);
-//                     height: pxToRem(64px);
-//                     margin-right: 10px;
-//                 }
-//                 .button--right{
-//                     font-size: pxToRem(20px);
-//                     height: pxToRem(64px);
-//                 }
-//             }
-//         }
-//     }
-// }
+
 @include tablet{
     .intro{
         .intro_infor{
              margin-left: 10%;
             .infor_line1{
-                font-size: pxToRem(20px);
+                @include font($secondary-font,20px);
                 
             }
             .infor_line234{
-                font-size: pxToRem(36px);
+                @include font($secondary-font,36px);
                 width: pxToRem(415px);
                 margin-top: pxToRem(40px);
                 margin-bottom: pxToRem(40px);
             }
             .infor_line567{
-                font-size: pxToRem(20px);
+                @include font($secondary-font,20px);
                 width: pxToRem(520px);
             }
             .intro_block_button{
                 .button--left{
-                    font-size: pxToRem(20px);
+                    @include font($secondary-font,20px);
                     height: pxToRem(64px);
                     margin-right: 10px;
                 }
                 .button--right{
-                    font-size: pxToRem(20px);
+                    @include font($secondary-font,20px);
                     height: pxToRem(64px);
                 }
             }

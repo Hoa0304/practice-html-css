@@ -30,24 +30,18 @@
             background-color: $color_blue;
 
             .formsendmail_line1 {
-                font-family: $fontMontserratRegular;
+                @include font($primary-font,18px,700);
                 color: $color_white;
-                font-style: normal;
-                font-weight: 700;
                 line-height: normal;
-                font-size: pxToRem(18px);
                 margin-top: -10%;
                 margin-bottom: 2%;
 
             }
 
             .formsendmail_line2 {
-                font-family: $fontMontserratRegular;
+                @include font($primary-font,10px,500);
                 color: $color_white;
-                font-style: normal;
-                font-weight: 500;
                 line-height: normal;
-                font-size: pxToRem(10px);
                 margin-bottom: 10%;
             }
 
@@ -66,10 +60,8 @@
 
                 .formsendinput::placeholder {
                     color: $color_0_025;
-                    font-style: normal;
-                    font-weight: 500;
                     line-height: normal;
-                    font-size: pxToRem(10px);
+                    @include font($primary-font,10px,500);
                     padding-left: 10px;
 
                 }
@@ -113,14 +105,14 @@
                 border-radius: 50px;
 
                 .formsendmail_line1 {
-                    font-size: pxToRem(36px);
+                    @include font($primary-font,36px);
                     margin-top: -5%;
                     margin-bottom: 2%;
 
                 }
 
                 .formsendmail_line2 {
-                    font-size: pxToRem(20px);
+                    @include font($primary-font,20px);
                     margin-bottom: 5%;
                 }
 
@@ -132,7 +124,7 @@
                     }
 
                     .formsendinput::placeholder {
-                        font-size: pxToRem(20px);
+                        @include font($primary-font,20px);
                         padding-left: 30px;
 
                     }
@@ -173,14 +165,14 @@
                 border-radius: 50px;
 
                 .formsendmail_line1 {
-                    font-size: pxToRem(48px);
+                    @include font($primary-font,48px);
                     margin-top: -5%;
                     margin-bottom: 2%;
 
                 }
 
                 .formsendmail_line2 {
-                    font-size: pxToRem(24px);
+                    @include font($primary-font,24px);
                     margin-bottom: 5%;
                 }
 
@@ -192,7 +184,7 @@
                     }
 
                     .formsendinput::placeholder {
-                        font-size: pxToRem(20px);
+                        @include font($primary-font,20px);
                         padding-left: 30px;
 
                     }

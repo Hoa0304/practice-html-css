@@ -1,11 +1,9 @@
-@use '../abstracts/functions' as *;
-@use '../abstracts/mixins' as * ;
-@use '../abstracts/variable' as *;
+@use '../abstracts/' as *;
+
 .getinfor{
     margin-top: 12%;
     margin-left: 3%;
     width: auto;
-    font-family: $fontMontserratRegular;
     .title_line1{
         display: inline-flex;
         .clock--svg{
@@ -16,9 +14,7 @@
         .title_line1_content{
             width: pxToRem(199px);
             color: $color_white;
-            font-size: pxToRem(14px);
-            font-weight: 700;
-            font-style: normal;
+            @include font($primary-font,14px,700);
             line-height: normal;
             align-items: center;
             justify-content: center;
@@ -38,7 +34,7 @@
             }
             .title_line1_content{
                 width: pxToRem(340px);
-                font-size: pxToRem(24px);
+                @include font($primary-font,24px);
             } 
             margin-bottom: 42px;
         }       
@@ -56,7 +52,7 @@
             }
             .title_line1_content{
                 width: pxToRem(340px);
-                font-size: pxToRem(24px);
+                @include font($primary-font,24px);
             }
        margin-bottom: 42px;
  }
@@ -72,7 +68,7 @@
             }
             .title_line1_content{
                 width: pxToRem(340px);
-                font-size: pxToRem(24px);
+                @include font($primary-font,24px);
             }
         margin-bottom: 19px;
         }

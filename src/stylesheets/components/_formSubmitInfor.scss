@@ -1,6 +1,4 @@
-@use '../abstracts/functions' as *;
-@use '../abstracts/mixins' as *;
-@use '../abstracts/variable' as *;
+@use '../abstracts/' as *;
 
 .pformsub{
     width: 100%;
@@ -51,17 +49,13 @@
         .vType {
             .content-formsub {
                 color: $color_initial_header;
-                font-size: pxToRem(14px);
-                font-weight: 600;
-                font-style: normal;
+                @include font($primary-font,14px,600);
                 line-height: normal;
             }
 
             .content-formsub_line2 {
                 color: $color_white;
-                font-style: normal;
-                font-weight: 600;
-                font-size: pxToRem(14px);
+                @include font($primary-font,14px,600);
                 line-height: normal;
             }
 
@@ -89,10 +83,8 @@
             border-radius: 10px;
             background-color: $color_blue;
             color: $color_white;
-            font-size: pxToRem(14px);
-            font-style: normal;
+            @include font($primary-font,14px,700);
             line-height: normal;
-            font-weight: 700;
             margin-bottom: 5%;
         }
     }
@@ -135,8 +127,7 @@
                 }
 
                 .formsubmit_button {
-                    font-size: pxToRem(20px);
-                    font-weight: 700;
+                    @include font($primary-font,20px,700);
                     width: pxToRem(253px);
                     height: pxToRem(64px);
                     border-radius: 20px;
@@ -147,11 +138,11 @@
             .date,
             .vType {
                 .content-formsub {
-                    font-size: pxToRem(20px);
+                    @include font($primary-font,20px);
                 }
 
                 .content-formsub_line2 {
-                    font-size: pxToRem(20px);
+                    @include font($primary-font,20px);
                     margin-right: 80px;
                 }
 
@@ -204,8 +195,7 @@
                 }
 
                 .formsubmit_button {
-                    font-size: pxToRem(24px);
-                    font-weight: 700;
+                    @include font($primary-font,24px,700);
                     width: pxToRem(142px);
                     height: pxToRem(69px);
                     border-radius: 20px;
@@ -218,11 +208,11 @@
             .date,
             .vType {
                 .content-formsub {
-                    font-size: pxToRem(24px);
+                    @include font($primary-font,24px);
                 }
 
                 .content-formsub_line2 {
-                    font-size: pxToRem(24px);
+                    @include font($primary-font,24px);
                     margin-right: 80px;
                 }
 
