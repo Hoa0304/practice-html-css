@@ -55,7 +55,7 @@
 @include tablet{
     .footer {
         .footericonmenu {
-            @include font($secondary-font, 32px);
+            @include font($secondary-font, 26px);
         }
     
         .footericonmenu::after {
