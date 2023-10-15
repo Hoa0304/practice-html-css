@@ -1,16 +1,13 @@
 @use "../abstracts/" as *;
 
 .footer {
-    font-family: $fontMontserrat;
     margin-top: 10%;
     margin-left: 6%;
 
     .footericonmenu {
         color: $color_white;
-        font-style: normal;
-        font-weight: 700;
         line-height: normal;
-        font-size: pxToRem(18px);
+        @include font($secondary-font, 18px,700);
         position: relative;
         margin-bottom: 20px;
     }
@@ -29,20 +26,17 @@
 
     .nav {
         margin-top: 10px;
-        font-family: $fontMontserratRegular;
 
         .theul {
             .theli {
-                font-style: normal;
-                font-weight: 500;
                 line-height: normal;
-                font-size: pxToRem(14px);
+                @include font($primary-font, 14px,500);
                 color: $color_initial_header;
                 margin-bottom: 5%;
             }
             .theli:nth-child(1){
                 color: $color_white;
-                font-family: $fontMontserrat;
+                @include font($secondary-font, 14px);
             }
         }
     }
@@ -61,7 +55,7 @@
 @include tablet{
     .footer {
         .footericonmenu {
-            font-size: pxToRem(26px);
+            @include font($secondary-font, 32px);
         }
     
         .footericonmenu::after {
@@ -73,13 +67,11 @@
         }
     
         .nav {
-            margin-top: 40px;
-            font-family: $fontMontserratRegular;
-            
+            margin-top: 40px;            
             .theul {
                 display: flex;
                 .theli {
-                    font-size: pxToRem(20px);
+                    @include font($primary-font, 20px);
                     margin-bottom: 5%;
                     margin-right: 5%;
                 }
@@ -103,7 +95,7 @@
         justify-content: space-around;
         margin-bottom:10%;
         .footericonmenu {
-            font-size: pxToRem(32px);
+            @include font($secondary-font, 32px);
         }
     
         .footericonmenu::after {
@@ -115,14 +107,12 @@
         }
     
         .nav {
-            margin-top: 40px;
-            font-family: $fontMontserratRegular;
-            
+            margin-top: 40px;            
             .theul {
                 display: flex;
                 width: 520px;
                 .theli {
-                    font-size: pxToRem(24px);
+                    @include font($primary-font, 24px);
                     margin-bottom: 5%;
                     margin-right: 5%;
                 }

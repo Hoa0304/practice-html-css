@@ -1,9 +1,6 @@
-@use '../abstracts/variable' as *;
-@use '../abstracts/functions' as *;
-@use '../abstracts/mixins' as *;
+@use '../abstracts/' as *;
 
 header {
-  font-family: $fontMontserrat;
 
   .header-container {
     position: relative;
@@ -22,9 +19,7 @@ header {
       top: pxToRem(56px);
       left: 10%;
       color: $color_white;
-      font-size: pxToRem(18px);
-      font-weight: 700;
-      font-style: normal;
+      @include font($secondary-font, 18px,700);
       line-height: normal;
       text-decoration: none;
 
@@ -59,7 +54,7 @@ header {
     .header-container {
       .home_icon--left {
         top: pxToRem(50px);
-        font-size: pxToRem(26px);
+        @include font($secondary-font, 26px);
         height: pxToRem(31px);
       }
 
@@ -79,7 +74,7 @@ header {
     .header-container {
       .home_icon--left {
         top: pxToRem(50px);
-        font-size: pxToRem(26px);
+        @include font($secondary-font, 26px);
         height: pxToRem(31px);
       }
 
@@ -104,9 +99,7 @@ header {
             display: block;
             top: pxToRem(40px);
             color: $color_blue;
-            font-size: pxToRem(24px);
-            font-weight: 700;
-            font-style: normal;
+            @include font($secondary-font, 24px);
             line-height: normal;
             padding: pxToRem(20px) pxToRem(20px);
             right: 5%;
@@ -120,7 +113,7 @@ header {
           }
       
           .home_icon--left {
-                 font-size: pxToRem(32px);
+                 @include font($secondary-font,32px);
                  left: 5%;
           }
       
@@ -169,14 +162,10 @@ header {
       
                 a {
                   text-decoration: none;
-                  font-size: 1.5rem;
-                  font-style: normal;
-                  font-weight: 500;
                   line-height: normal;
                   color: $color_initial_header;
-                  font-style: normal;
                   position: relative;
-                  font-family: "Montserrat Regular", sans-serif;
+                  @include font($primary-font, 1.5rem,500);
                 }
       
                 .nav_items::after {
