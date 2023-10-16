@@ -23,23 +23,63 @@
         bottom: 0;
         top: 25px;
     }
-
-    .nav {
-        margin-top: 10px;
-
-        .theul {
-            .theli {
-                line-height: normal;
-                @include font($primary-font, 14px,500);
-                color: $color_initial_header;
-                margin-bottom: 5%;
+    nav {
+        width: 100%;
+        top: pxToRem(60px);
+        margin-right: auto;
+        width: fit-content;
+  
+        ul {
+            display: flex;
+            flex-direction: column;
+          align-items: flex-start;
+  
+          .nav_pk_items:nth-child(1) {
+            position: relative;
+  
+            a {
+              color: $color_white;
             }
-            .theli:nth-child(1){
-                color: $color_white;
-                @include font($secondary-font, 14px);
+          }
+          .nav_pk_items {
+            position: relative;
+            list-style-type: none;
+  
+            margin-bottom: 10px;
+            a {
+              text-decoration: none;
+              line-height: normal;
+              color: $color_initial_header;
+              position: relative;
+              @include font($primary-font, 14px,500);
+              margin-bottom: 40px;
             }
+  
+            .nav_items::after {
+              content: "";
+              position: absolute;
+              left: 50%;
+              transform: translateX(-50%);
+              bottom: -10px;
+              width: 10px;
+              height: 10px;
+              background-color: $color_blue;
+              border-radius: 50%;
+              opacity: 0;
+            }
+  
+            .nav_items:hover {
+              color: $color_white;
+            }
+  
+            .nav_items:hover::after {
+              opacity: 1;
+            }
+          }
         }
-    }
+      } 
+
+   
     .icon{
         display: flex;
         margin-bottom: 5%;
@@ -65,18 +105,17 @@
             bottom: 0;
             top: 40px;
         }
-    
-        .nav {
-            margin-top: 40px;            
-            .theul {
-                display: flex;
-                .theli {
-                    @include font($primary-font, 20px);
-                    margin-bottom: 5%;
-                    margin-right: 5%;
+        nav {
+            ul {
+                flex-direction: row;
+              .nav_pk_items {
+                margin: 10px;
+                a {
+                  @include font($primary-font, 20px,500);
                 }
+              }
             }
-        }
+          } 
         .icon{
             .icon--fg{
                 margin-right: 3px;
@@ -105,19 +144,20 @@
             bottom: 0;
             top: 40px;
         }
-    
-        .nav {
-            margin-top: 40px;            
-            .theul {
-                display: flex;
-                width: 520px;
-                .theli {
-                    @include font($primary-font, 24px);
-                    margin-bottom: 5%;
-                    margin-right: 5%;
+        nav {
+            margin-left: 10%;
+      
+            ul {
+                flex-direction: row;
+                gap: 20px;
+              .nav_pk_items {
+                
+              a {
+                  @include font($primary-font, 1.5rem,500);
                 }
+              }
             }
-        }
+          } 
         .icon{
             margin-bottom: 0;
             .icon--fg{

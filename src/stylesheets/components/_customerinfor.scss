@@ -109,17 +109,19 @@
             }
 
             .inputname {
-                width: 85%;
+                width: 80%;
                 height: pxToRem(50px);
                 flex-shrink: 0;
                 background-color: $color_inputname;
                 border-radius: 10px;
                 border: 0;
             }
-
+            input[type="text"]{
+                @include font($primary-font,14px);
+                padding-left: 5%;
+            }
             .inputname::placeholder {
                 font-family: $primary-font;
-                padding-left: 10%;
             }
 
             .cusinfor_form_line34 {
@@ -203,7 +205,7 @@
 
             .cusinfor_form_button {
                 display: flex;
-                width: 90%;
+                width: 85%;
                 height: 50px;
                 justify-content: center;
                 align-items: center;
@@ -306,6 +308,10 @@
                 width: pxToRem(650px);
                 height: pxToRem(70px);
             }
+            input[type="text"]{
+                @include font($primary-font,20px);
+                padding-left: 5%;
+            }
             .inputname::placeholder{
                 @include font($secondary-font,20px);
             }
@@ -339,7 +345,7 @@
 
                     .phonenumber {
                         @include font($primary-font,20px);
-                        width: 155px;
+                        width: 255px;
                         margin-top: 10px;
                     }
                 }
@@ -350,7 +356,7 @@
                     height: 70px;
                     border-radius: 20px;
                     @include font($secondary-font,20px);
-                    margin-left: 200px;
+                    margin-left: 20%;
                 }
             }
 
@@ -453,6 +459,10 @@
                     width: pxToRem(650px);
                     height: pxToRem(70px);
                 }
+                input[type="text"]{
+                    @include font($primary-font,20px);
+                    padding-left: 5%;
+                }
                 .inputname::placeholder{
                     @include font($secondary-font,20px);
                 }
@@ -486,7 +496,7 @@
     
                         .phonenumber {
                             @include font($primary-font,20px);
-                            width: 155px;
+                            width: 255px;
                             margin-top: 10px;
                         }
                     }
@@ -497,7 +507,7 @@
                         height: 70px;
                         border-radius: 20px;
                         @include font($secondary-font,20px);
-                        margin-left: 200px;
+                        margin-left: 20%;
                     }
                 }
     

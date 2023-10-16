@@ -1,10 +1,9 @@
 @use '../abstracts/' as *;
 
-header {
 
   .header-container {
     position: relative;
-    .nav {
+    nav {
       display: none;
     }
 
@@ -48,9 +47,8 @@ header {
       border-radius: 10px;
     }
   }
-}
+
 @include middle{
-  header {
     .header-container {
       .home_icon--left {
         top: pxToRem(50px);
@@ -67,10 +65,8 @@ header {
         height: pxToRem(45px);
       }
     }
-  }
 }
 @include tablet {
-  header {
     .header-container {
       .home_icon--left {
         top: pxToRem(50px);
@@ -87,11 +83,9 @@ header {
         height: pxToRem(45px);
       }
     }
-  }
 }
 
 @include desktop {
-  header {
     .header-container{
 
         .checkstatus--right {
@@ -122,7 +116,7 @@ header {
             top: pxToRem(40px);
           }
       
-          .nav {
+          nav {
             display: block;
             position: absolute;
             top: pxToRem(60px);
@@ -191,5 +185,5 @@ header {
             }
           }
     }
-  }
+  
 }
