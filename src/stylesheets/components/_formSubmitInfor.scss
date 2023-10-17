@@ -15,16 +15,17 @@
     position: relative;
     
     .formsub-content {
-        width: 90%;
+        width: 80%;
         display: flex;
         flex-direction: column;
         justify-content:space-between;
         align-items: center;
+        padding-left: 2%;
+        padding-bottom: 10%;
         .content--left{
             display: flex;
             flex-direction: column;
             width: 100%;
-            margin-left: 3%;
         }
         .content--right{
             display: flex;
@@ -32,7 +33,7 @@
             width: 100%;
         }
         .content--left, .content--right{
-            margin-top: 3%;
+            margin-top: 2%;
         }
         .location {
             display: inline-flex;
@@ -188,7 +189,7 @@
             .content--right {
                 display: flex;
                 flex-direction: row;
-                
+                width: 100%;
                 .vType {
                     .vType_content {
                         .content-formsub_line2 {
@@ -203,7 +204,7 @@
                     height: pxToRem(69px);
                     border-radius: 20px;
                     margin-left: 10%;
-                    margin-right: 20px;
+                    margin-right: 0px;
                 }
             }
 

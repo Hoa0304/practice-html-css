@@ -9,7 +9,8 @@
     margin-top: 15%;
     margin-left: 3%;
     width: 90%;
-    height: 381px;
+    min-height: max-content;
+    padding-bottom: 3%;
     border-radius: 20px;
     background-color: $color_background_checkstt;
 
@@ -31,8 +32,9 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
         margin-top: 6%;
+        margin-left: 10%;
 
         .formCheck_input_line1,
         .formCheck_input_line2 {
@@ -115,7 +117,9 @@
     }
 
 }
+@include middle{
 
+}
 @include tablet {
     .formCheck {
         top: 1670px;
@@ -129,7 +133,7 @@
         }
 
         .formCheck_input {
-
+         
             .formCheck_input_line1,
             .formCheck_input_line2 {
                 height: pxToRem(69px);
@@ -145,7 +149,7 @@
             }
 
             .formCheck_input_button {
-                margin-right: 43%;
+                 margin-right: 60%;
                 display: flex;
                 width: 172px;
                 height: 64px;
@@ -171,8 +175,8 @@
 @include desktop {
     .formCheck {
         top: 1250px;
-        height: 340px;
-
+        padding-bottom: 0;
+        border-radius: 10px;
         .formCheck_line1 {
             height: 101px;
             @include font($secondary-font,24px);
@@ -182,6 +186,8 @@
             width: 100%;
             flex-direction: row;
             margin-top: 3%;
+            align-items: center;
+            margin-left: 0;
 
             .formCheck_input_line1,
             .formCheck_input_line2 {
