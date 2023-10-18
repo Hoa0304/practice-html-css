@@ -47,7 +47,14 @@
         margin-top: 40px;
         display: flex;
         align-items: center;
-
+        text-decoration: none;
+        &:hover{
+           
+            text-decoration: none;
+            .cardProtect_readmore_content{
+                color: $color_white;
+            }
+        }
         .cardProtect_readmore_content {
             color: $color_blue;
             @include font($secondary-font,12px,700);
