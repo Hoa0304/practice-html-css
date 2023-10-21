@@ -17,7 +17,7 @@
         justify-content: center;
         align-items: center;
 
-        .form {
+        form {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -30,24 +30,18 @@
             background-color: $color_blue;
 
             .formsendmail_line1 {
-                font-family: $fontMontserratRegular;
+                @include font($primary-font,18px,700);
                 color: $color_white;
-                font-style: normal;
-                font-weight: 700;
                 line-height: normal;
-                font-size: pxToRem(18px);
                 margin-top: -10%;
                 margin-bottom: 2%;
 
             }
 
             .formsendmail_line2 {
-                font-family: $fontMontserratRegular;
+                @include font($primary-font,10px,500);
                 color: $color_white;
-                font-style: normal;
-                font-weight: 500;
                 line-height: normal;
-                font-size: pxToRem(10px);
                 margin-bottom: 10%;
             }
 
@@ -58,18 +52,20 @@
 
                 .formsendinput {
                     border-radius: 20px 0px 0px 20px;
-                    width: 180px;
+                    width: 80%;
                     height: 40px;
                     background-color: $color_white;
                     border: 0;
                 }
+                input[type="text"]{
+                    @include font($primary-font,10px);
+                    padding-left: 30px;
+                }
 
                 .formsendinput::placeholder {
                     color: $color_0_025;
-                    font-style: normal;
-                    font-weight: 500;
                     line-height: normal;
-                    font-size: pxToRem(10px);
+                    @include font($primary-font,10px,500);
                     padding-left: 10px;
 
                 }
@@ -96,7 +92,12 @@
     }
 
 }
-
+@include middle{
+    .formsendmail{
+         margin-top: -25%;
+    }
+   
+}
 @include tablet {
     .formsendmail {
 
@@ -107,20 +108,20 @@
             height: 320px;
             border-radius: 50px;
 
-            .form {
+            form {
                 width: 659px;
                 height: 263px;
                 border-radius: 50px;
 
                 .formsendmail_line1 {
-                    font-size: pxToRem(36px);
+                    @include font($primary-font,36px);
                     margin-top: -5%;
                     margin-bottom: 2%;
 
                 }
 
                 .formsendmail_line2 {
-                    font-size: pxToRem(20px);
+                    @include font($primary-font,20px);
                     margin-bottom: 5%;
                 }
 
@@ -130,9 +131,13 @@
                         width: 450px;
                         height: 75px;
                     }
+                    input[type="text"]{
+                        @include font($primary-font,20px);
+                        padding-left: 30px;
+                    }
 
                     .formsendinput::placeholder {
-                        font-size: pxToRem(20px);
+                        @include font($primary-font,20px);
                         padding-left: 30px;
 
                     }
@@ -167,20 +172,20 @@
             height: 435px;
             border-radius: 50px;
 
-            .form {
+            form {
                 width: 1031px;
                 height: 400px;;
                 border-radius: 50px;
 
                 .formsendmail_line1 {
-                    font-size: pxToRem(48px);
+                    @include font($primary-font,48px);
                     margin-top: -5%;
                     margin-bottom: 2%;
 
                 }
 
                 .formsendmail_line2 {
-                    font-size: pxToRem(24px);
+                    @include font($primary-font,24px);
                     margin-bottom: 5%;
                 }
 
@@ -190,20 +195,25 @@
                         width: 450px;
                         height: 75px;
                     }
+                    input[type="text"]{
+                        @include font($primary-font,20px);
+                        padding-left: 30px;
+                    }
 
                     .formsendinput::placeholder {
-                        font-size: pxToRem(20px);
-                        padding-left: 30px;
+                        @include font($primary-font,20px);
+                        padding-left: 0px;
 
                     }
 
                     .formsendbutton {
                         width: 100px;
-                        height: 75px;
+                        height: 77px;
                         margin-left: -2px;
                         border-radius: 0px 30px 30px 0px;
 
                         .send--fg {
+                            cursor: pointer;
                             .send--svg {
                                 height: 40px;
                                 width: 40px;

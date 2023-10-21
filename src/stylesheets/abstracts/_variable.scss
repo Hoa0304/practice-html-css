@@ -1,22 +1,28 @@
-$color_white: #fff;
+//color with opacity
 $color_icon_right:rgba(196, 196, 196, 0.15);
-$color_blue:#17C2EC;
 $color_initial_header:rgba(255, 255, 255, 0.50);
 $color_255_075:rgba(255, 255, 255, 0.750);
 $color_background_checkstt:rgba(196, 196, 196, 0.10);
-$fontMontserrat:"Montserrat";
-$fontMontserratRegular:"Montserrat Regular";
 $color_gray_opa7:rgba(255, 255, 255, 0.70);
 $color_gray_blur: rgba(196,196,196,0);
 $color_sm_gray: rgba(196, 196, 196, 0.20);
 $color_background_formSub:rgba(196, 196, 196, 0.05);
 $color-196_025:rgba(196, 196, 196, 0.25);
-$color_black:#000;
 $color_inputname: rgba(11, 21, 60, 0.15);
 $color_0_05:rgba(0, 0, 0, 0.50);
 $color_0_01:rgba(0, 0, 0, 0.10);
 $color_0_025:rgba(0, 0, 0, 0.25);
 $color_196_05:rgba(196, 196, 196, 0.50);
 $color_0_06:rgba(0, 0, 0, 0.6);
+
+//color
 $colorsendbutton:#0B153C;
 $colorphonenumnber:#D9DAE0;
+$color_white: #fff;
+$color_blue:#17C2EC;
+$color_black:#000;
+
+
+//font
+$primary-font:"Montserrat Regular", sans-serif;
+$secondary-font:"Montserrat Bold", serif;

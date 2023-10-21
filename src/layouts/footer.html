@@ -1,11 +1,13 @@
 <div class="footer">
     <p class="footericonmenu">Vaccination.ng</p>
-    <nav class="nav">
-        <ul class="theul">
-            <li class="theli">Home</li>
-            <li class="theli">Services</li>
-            <li class="theli">Schedule</li>
-            <li class="theli">Contact us</li>
+    <nav>
+        <ul>
+            <include src="./components/navList.html" locals='{
+           "classList":"nav_pk_items",
+           "classLink":"nav_items",
+           "list": "[`Home`,`Services`,`Schedule`,`Contact us`]"
+        }'>
+            </include>
         </ul>
     </nav>
     <div class="icon">

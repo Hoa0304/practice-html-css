@@ -1,16 +1,13 @@
 @use "../abstracts/" as *;
 
 .footer {
-    font-family: $fontMontserrat;
     margin-top: 10%;
-    margin-left: 6%;
+    margin-left: 10%;
 
     .footericonmenu {
         color: $color_white;
-        font-style: normal;
-        font-weight: 700;
         line-height: normal;
-        font-size: pxToRem(18px);
+        @include font($secondary-font, 18px,700);
         position: relative;
         margin-bottom: 20px;
     }
@@ -26,29 +23,67 @@
         bottom: 0;
         top: 25px;
     }
-
-    .nav {
-        margin-top: 10px;
-        font-family: $fontMontserratRegular;
-
-        .theul {
-            .theli {
-                font-style: normal;
-                font-weight: 500;
-                line-height: normal;
-                font-size: pxToRem(14px);
-                color: $color_initial_header;
-                margin-bottom: 5%;
+    nav {
+        width: 100%;
+        top: pxToRem(60px);
+        margin-right: auto;
+        width: fit-content;
+        margin: 7% 0 2% 0;
+        ul {
+            display: flex;
+            flex-direction: column;
+          align-items: flex-start;
+  
+          .nav_pk_items:nth-child(1) {
+            position: relative;
+  
+            a {
+              color: $color_white;
             }
-            .theli:nth-child(1){
-                color: $color_white;
-                font-family: $fontMontserrat;
+          }
+          .nav_pk_items {
+            position: relative;
+            list-style-type: none;
+  
+            margin-bottom: 10px;
+            a {
+              text-decoration: none;
+              line-height: normal;
+              color: $color_initial_header;
+              position: relative;
+              @include font($primary-font, 14px,500);
+              margin-bottom: 40px;
             }
+  
+            .nav_items::after {
+              content: "";
+              position: absolute;
+              left: 50%;
+              transform: translateX(-50%);
+              bottom: -10px;
+              width: 10px;
+              height: 10px;
+              background-color: $color_blue;
+              border-radius: 50%;
+              opacity: 0;
+            }
+  
+            .nav_items:hover {
+              color: $color_white;
+            }
+  
+            .nav_items:hover::after {
+              opacity: 1;
+            }
+          }
         }
-    }
+      } 
+
+   
     .icon{
         display: flex;
         margin-bottom: 5%;
+        margin-right: 5%;
         .icon--fg{
             margin-right: 3px;
             .icon--svg{
@@ -61,7 +96,7 @@
 @include tablet{
     .footer {
         .footericonmenu {
-            font-size: pxToRem(26px);
+            @include font($secondary-font, 26px);
         }
     
         .footericonmenu::after {
@@ -71,20 +106,17 @@
             bottom: 0;
             top: 40px;
         }
-    
-        .nav {
-            margin-top: 40px;
-            font-family: $fontMontserratRegular;
-            
-            .theul {
-                display: flex;
-                .theli {
-                    font-size: pxToRem(20px);
-                    margin-bottom: 5%;
-                    margin-right: 5%;
+        nav {
+            ul {
+                flex-direction: row;
+              .nav_pk_items {
+                margin: 10px;
+                a {
+                  @include font($primary-font, 20px,500);
                 }
+              }
             }
-        }
+          } 
         .icon{
             .icon--fg{
                 margin-right: 3px;
@@ -103,7 +135,7 @@
         justify-content: space-around;
         margin-bottom:10%;
         .footericonmenu {
-            font-size: pxToRem(32px);
+            @include font($secondary-font, 32px);
         }
     
         .footericonmenu::after {
@@ -113,21 +145,20 @@
             bottom: 0;
             top: 40px;
         }
-    
-        .nav {
-            margin-top: 40px;
-            font-family: $fontMontserratRegular;
-            
-            .theul {
-                display: flex;
-                width: 520px;
-                .theli {
-                    font-size: pxToRem(24px);
-                    margin-bottom: 5%;
-                    margin-right: 5%;
+        nav {
+            margin-left: 10%;
+      
+            ul {
+                flex-direction: row;
+                gap: 20px;
+              .nav_pk_items {
+                
+              a {
+                  @include font($primary-font, 1.5rem,500);
                 }
+              }
             }
-        }
+          } 
         .icon{
             margin-bottom: 0;
             .icon--fg{

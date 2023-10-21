@@ -1,6 +1,6 @@
 @use "../abstracts/" as *;
+
 .virusBehavior{
-    font-family: $fontMontserrat;
     margin-top: 10%;
     display: flex;
     flex-direction: column;
@@ -15,20 +15,16 @@
         align-items: center;
         .vBC_line1{
             color: $color_white;
-            font-size: pxToRem(12px);
+            @include font($secondary-font,12px,700);
             text-align: center;
-            font-style: normal;
-            font-weight: 700;
             line-height: normal;
             margin-bottom: 10px;
         }
         .vBC_line2{
             display: flex;
             .textt{
-               font-size: pxToRem(24px);
-               font-weight: 800;
+               @include font($secondary-font,24px,800);
                color: $color_white;
-               font-style: normal;
                line-height: normal; 
             }
             .subline2_1{
@@ -44,11 +40,8 @@
             width: 276px;
             height: 60px;
             color: $color_initial_header;
-            font-size: pxToRem(12px);
-            font-style: normal;
-            font-weight: 500;
+            @include font($primary-font,12px,500);
             line-height: normal;
-            font-family: $fontMontserratRegular;
             text-align: center;
             margin-bottom: 40px;
         }
@@ -84,11 +77,8 @@
                         display: flex;
                         justify-content: center;
                         align-items: center;
-                        font-size: pxToRem(9px);
+                        @include font($primary-font,9px,600);
                         line-height: normal;
-                        font-style: normal;
-                        font-weight: 600;
-                        font-family: $fontMontserratRegular;
                         padding: 3px 10px;
                         margin-left: -10px;
                     }
@@ -97,22 +87,22 @@
                        width: 32px;
                     }
                 }
-                .virusdescription1{
+                .vd:nth-child(1){
                     margin-left: 25%;
                 }
-                .virusdescription2{
+                .vd:nth-child(2){
                    margin-left: 0;
                 }
-                .virusdescription3{
+                .vd:nth-child(3){
                     margin-left: -10%;
                 }
-                .virusdescription4{
+                .vd:nth-child(4){
                      margin-left: 20%;
                 }
-                .virusdescription5{
+                .vd:nth-child(5){
                     margin-left: -20%;
                 }
-                .virusdescription6{
+                .vd:nth-child(6){
                     margin-left: 40%;
 
                 }
@@ -124,17 +114,17 @@
     .virusBehavior{
         .virusBehaviorContent{
             .vBC_line1{
-                font-size: pxToRem(20px);
+                @include font($secondary-font,20px);
                 margin-bottom: 20px;
                 margin-top: -10%;
             }
             .vBC_line2{
                 .textt{
-                   font-size: pxToRem(36px);
+                    @include font($secondary-font,36px);
                 }
             }
             .vBC_para3{
-                font-size: pxToRem(18px);
+                @include font($secondary-font,18px);
                 width: 550px;
             }
         }
@@ -152,7 +142,7 @@
                         .vdp{
                             height: 45px;
                             border-radius: 10px;
-                            font-size: pxToRem(18px);
+                            @include font($secondary-font,18px);
                             padding: 3px 30px;
                             margin-left: -25px;
                         }
@@ -161,20 +151,20 @@
                            width: 65px;
                         }
                     }
-                    .virusdescription1{
+                    .vd:nth-child(1){
                         margin-left: 10%;
                     }
-                    .virusdescription2{
+                    .vd:nth-child(2){
                     }
-                    .virusdescription3{
+                    .vd:nth-child(3){
                         margin-left: -25%;
                     }
-                    .virusdescription4{
+                    .vd:nth-child(4){
                     }
-                    .virusdescription5{
+                    .vd:nth-child(5){
                         margin-left: -25%;
                     }
-                    .virusdescription6{
+                    .vd:nth-child(6){
                     }
                 }
             }
@@ -186,17 +176,17 @@
         top: 3200px;
         .virusBehaviorContent{
             .vBC_line1{
-                font-size: pxToRem(24px);
+                @include font($secondary-font,24px);
                 margin-bottom: 20px;
                 margin-top: -10%;
             }
             .vBC_line2{
                 .textt{
-                   font-size: pxToRem(48px);
+                    @include font($secondary-font,48px);
                 }
             }
             .vBC_para3{
-                font-size: pxToRem(24px);
+                @include font($secondary-font,24px);
                 width: 953px;
             }
         }
@@ -215,7 +205,7 @@
                         .vdp{
                             height: 70px;
                             border-radius: 15px;
-                            font-size: pxToRem(20px);
+                            @include font($secondary-font,20px);
                             padding: 3px 50px;
                             margin-left: -40px;
                         }
@@ -224,20 +214,20 @@
                            width: 100px;
                         }
                     }
-                    .virusdescription1{
+                    .vd:nth-child(1){
                         margin-left: 10%;
                     }
-                    .virusdescription2{
+                    .vd:nth-child(2){
                     }
-                    .virusdescription3{
+                    .vd:nth-child(3){
                         margin-left: -25%;
                     }
-                    .virusdescription4{
+                    .vd:nth-child(4){
                     }
-                    .virusdescription5{
+                    .vd:nth-child(5){
                         margin-left: -45%;
                     }
-                    .virusdescription6{
+                    .vd:nth-child(6){
                     }
                 }
             }

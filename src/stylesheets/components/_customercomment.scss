@@ -1,8 +1,6 @@
 @use "../abstracts/" as *;
 
 .cuscomment {
-    font-family: $fontMontserrat;
-    
     background-color: $color_white;
     width: 100%;
     margin-bottom: 50px;
@@ -27,18 +25,14 @@
                 margin-bottom: 20px;
                 color: $color_blue;
                 text-align: center;
-                font-size: pxToRem(14px);
-                font-style: normal;
-                font-weight: 700;
+                @include font($secondary-font,14px,700);
                 line-height: normal;
             }
 
             .cc_line2 {
                 color: $color_black;
                 text-align: center;
-                font-size: pxToRem(24px);
-                font-style: normal;
-                font-weight: 800;
+                @include font($secondary-font,24px,800);
                 line-height: normal;
                 margin-bottom: 10px;
             }
@@ -46,10 +40,7 @@
             .cc_para1 {
                 color: $color_0_05;
                 text-align: center;
-                font-family: $fontMontserratRegular;
-                font-size: pxToRem(12px);
-                font-style: normal;
-                font-weight: 500;
+                @include font($primary-font,12px,500);
                 line-height: normal;
                 width: 248px;
             }
@@ -103,17 +94,13 @@
                             margin-left: 20px;
 
                             .pinfor_line1 {
-                                font-size: pxToRem(14px);
-                                font-style: normal;
-                                font-weight: 700;
+                                @include font($secondary-font,14px,700);
                                 line-height: normal;
                             }
 
                             .pinfor_line2 {
                                 color: $color_0_05;
-                                font-size: pxToRem(10px);
-                                font-style: normal;
-                                font-weight: 700;
+                                @include font($secondary-font,10px,700);
                                 line-height: normal;
                                 margin-left: -30px;
                             }
@@ -124,11 +111,8 @@
                         text-align: center;
                         width: pxToRem(255px);
                         color: $color_0_06;
-                        font-size: pxToRem(12px);
-                        font-style: normal;
-                        font-weight: 500;
                         line-height: normal;
-                        font-family: $fontMontserratRegular;
+                        @include font($primary-font,12px,500);
                         margin-left: 20px;
                         margin-top: 40px;
                     }
@@ -173,15 +157,18 @@
                 margin-bottom: 40px;
 
                 .cc_line1 {
-                    font-size: pxToRem(20px);
+                    @include font($secondary-font,20px);
+
                 }
 
                 .cc_line2 {
-                    font-size: pxToRem(36px);
+                    @include font($secondary-font,20px);
+
                 }
 
                 .cc_para1 {
-                    font-size: pxToRem(18px);
+                    @include font($secondary-font,20px);
+
                     width: 590px;
                 }
             }
@@ -216,11 +203,11 @@
                             .pinfor {
                                 margin-left: 20px;
                                 .pinfor_line1 {
-                                    font-size: pxToRem(20px);
+                                    @include font($secondary-font,20px);
                                 }
 
                                 .pinfor_line2 {
-                                    font-size: pxToRem(14px);
+                                    @include font($secondary-font,14px);
                                     margin-left: -60px;
                                 }
                             }
@@ -229,11 +216,8 @@
                             text-align: center;
                             width: pxToRem(366px);
                             color: $color_0_06;
-                            font-size: pxToRem(18px);
-                            font-style: normal;
-                            font-weight: 500;
+                            @include font($primary-font,18px,500);
                             line-height: normal;
-                            font-family: $fontMontserratRegular;
                             margin-left: 20px;
                             margin-top: 40px;
                         }
@@ -264,15 +248,15 @@
                 margin-top: 60px;
                 margin-bottom: 50px;
                 .cc_line1 {
-                    font-size: pxToRem(24px);
+                    @include font($secondary-font,24px);
                 }
 
                 .cc_line2 {
-                    font-size: pxToRem(48px);
+                    @include font($secondary-font,24px);
                 }
 
                 .cc_para1 {
-                    font-size: pxToRem(24px);
+                    @include font($secondary-font,24px);
                     width: 953px;
                 }
             }
@@ -316,11 +300,11 @@
                             .pinfor {
                                 margin-left: 20px;
                                 .pinfor_line1 {
-                                    font-size: pxToRem(20px);
+                                    @include font($secondary-font,20px);
                                 }
 
                                 .pinfor_line2 {
-                                    font-size: pxToRem(14px);
+                                    @include font($secondary-font,14px);
                                     margin-left: -60px;
                                 }
                             }
@@ -329,11 +313,8 @@
                             text-align: center;
                             width: pxToRem(366px);
                             color: $color_0_06;
-                            font-size: pxToRem(18px);
-                            font-style: normal;
-                            font-weight: 500;
                             line-height: normal;
-                            font-family: $fontMontserratRegular;
+                            @include font($primary-font,18px,500);
                             margin-left: 20px;
                             margin-top: 40px;
                         }
