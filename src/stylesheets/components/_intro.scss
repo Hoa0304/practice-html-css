@@ -8,7 +8,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-
+    margin-left: 0%;
     .intro_infor{
         margin-left: 0%;
         width: 90%;
@@ -18,7 +18,8 @@
             line-height: normal;
         }
         .infor_line234{
-            @include font($secondary-font,12px,800);
+            @include font($secondary-font,24px,800);
+            width: 80%;
             color: $color_white;
             margin-top: pxToRem(20px);
             line-height: normal;
@@ -31,6 +32,7 @@
             @include font($secondary-font,14px,700);
             color: $color_gray_opa7;
             line-height: normal;
+            width: 80%;
             margin-bottom: pxToRem(40px);
         }
         .intro_block_button{
@@ -48,9 +50,11 @@
                 box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
                 color: $color_white;
                 gap: pxToRem(10px);
-                
+                width: 42%;
             }
             .button--right{
+                width: 42%;
+                margin-left:3%;
                 display: inline-flex;
                 height: pxToRem(50px);
                 padding: pxToRem(20px) pxToRem(25px);
@@ -281,12 +285,13 @@
      justify-content: space-around;
     .intro_infor{
         margin-left: 3%;
-        width: pxToRem(630px);
+        width: 100%;
         .infor_line1{
            font-size: pxToRem(24px);
         }
         .infor_line234{
           font-size: pxToRem(48px);
+          width: 90%;
         }
         .infor_line567{
            font-size: pxToRem(24px);

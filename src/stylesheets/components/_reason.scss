@@ -1,8 +1,8 @@
 @use '../abstracts/' as *;
 
 .getV {
-    margin-top: 5%;
-    margin-left: 3%;
+    margin-top: 9%;
+    margin-left: 7%;
 
     .getV_content {
         .getV_content_line1 {
@@ -155,8 +155,8 @@
 
     @include desktop{
         .getV {
-            top: 1650px;   
-            left: 7%; 
+            top: 1650px;
+            margin-left: 3%;
             .getV_content {
                 display: flex;
                 .getV_content_line1 {

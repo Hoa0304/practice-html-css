@@ -6,7 +6,7 @@
     background-color: $color_white;
      
     .cusinfor {
-        padding: 15% 2%;
+        padding: 15% 0;
         display: grid;
         grid-template-columns: auto;
         grid-template-rows: max-content;
@@ -27,7 +27,7 @@
             height: pxToRem(73px);
             position: relative;
             margin-bottom: pxToRem(30px);
-
+            margin-left: 1%;
             .cusinfor_image_card {
                 position: relative;
                 margin-left: 7%;
@@ -83,7 +83,6 @@
             .iconcorona--fg {
                 position: absolute;
                 top: pxToRem(-30px);
-                left: pxToRem(30px);
 
                 .iconcorona--svg {
                     width: pxToRem(75px);
@@ -125,6 +124,7 @@
             }
 
             .cusinfor_form_line34 {
+                width: 80%;
                 text-align: left;
                 color: $color_0_05;
                 @include font($secondary-font,14px,500);
@@ -245,15 +245,17 @@
     height: pxToRem(1300px);
     .cusinfor {
         padding: 5% 2%;
+        
         .cusinfor_line1 {
+            margin-left: 5%;
             text-align: left;
-            margin-left: 10px;
             margin-bottom: pxToRem(80px);
             @include font($secondary-font,36px);
             width: pxToRem(590px);
             height: pxToRem(60px);
         }
         .cusinfor_image {
+            margin-left: 5%;
             width: pxToRem(400px);
             height: pxToRem(73px);
             position: relative;
@@ -389,8 +391,10 @@
     .cusinforsub {
         width: 100%;
         height: pxToRem(650px);
+        
         .cusinfor {
-            padding: 1% 2%;
+            padding: 1% 0;
+            margin-left: 0;
             grid-template-columns: auto auto;
             .cusinfor_line1 {
                 grid-column: 1;
@@ -408,6 +412,7 @@
                 height: pxToRem(73px);
                 position: relative;
                 margin-bottom: 0;
+                margin-left: -10%;
                 .cusinfor_image_card {
                     width: pxToRem(380px);
                     height: pxToRem(480px);

@@ -7,8 +7,8 @@
 }
 .formCheck {
     margin-top: 15%;
-    margin-left: 3%;
-    width: 90%;
+    margin-left: 0%;
+    width: 87%;
     min-height: max-content;
     padding-bottom: 3%;
     border-radius: 20px;
@@ -18,7 +18,7 @@
         width: 100%;
         height: 40px;
         flex-shrink: 0;
-        border-radius: 10px 10px 0 0;
+        border-radius: 20px 20px 0 0;
         background-color: $color_background_formSub;
         display: inline-flex;
         @include font($secondary-font,10px,700);
@@ -118,7 +118,7 @@
 
 }
 @include middle{
-
+   
 }
 @include tablet {
     .formCheck {
@@ -130,6 +130,7 @@
         .formCheck_line1 {
             height: 55px;
             @include font($secondary-font,20px);
+            border-radius: 20px  20px 0 0;
         }
 
         .formCheck_input {

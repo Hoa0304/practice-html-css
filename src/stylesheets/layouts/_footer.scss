@@ -2,7 +2,7 @@
 
 .footer {
     margin-top: 10%;
-    margin-left: 6%;
+    margin-left: 10%;
 
     .footericonmenu {
         color: $color_white;
@@ -28,7 +28,7 @@
         top: pxToRem(60px);
         margin-right: auto;
         width: fit-content;
-  
+        margin: 7% 0 2% 0;
         ul {
             display: flex;
             flex-direction: column;

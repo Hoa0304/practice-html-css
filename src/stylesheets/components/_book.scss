@@ -1,10 +1,11 @@
 @use '../abstracts/' as *;
 
 .getinfor{
-    margin-top: 12%;
-    padding-left:  3%;
-    width: auto;
+    margin-top: 15%;
+    margin-left: 0%;
+    width: 100%;
     .title_line1{
+        margin-left: 6%;
         display: inline-flex;
         .clock--svg{
             width: pxToRem(20px);
