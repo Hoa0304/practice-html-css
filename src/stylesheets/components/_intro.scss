@@ -10,7 +10,7 @@
     width: 100%;
     margin-left: 0%;
     .intro_infor{
-        margin-left: 0%;
+        margin-left: 10%;
         width: 90%;
         .infor_line1{
             @include font($secondary-font,12px,700);
@@ -284,7 +284,7 @@
      width: 100%;
      justify-content: space-around;
     .intro_infor{
-        margin-left: 3%;
+        margin-left: 5%;
         width: 100%;
         .infor_line1{
            font-size: pxToRem(24px);

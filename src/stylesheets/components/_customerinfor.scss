@@ -12,7 +12,7 @@
         grid-template-rows: max-content;
 
         .cusinfor_line1 {
-            margin-left: auto;
+            margin-left: 7%;
             margin-right: auto;
             margin-bottom: pxToRem(40px);
             color: $color_black;
@@ -27,7 +27,7 @@
             height: pxToRem(73px);
             position: relative;
             margin-bottom: pxToRem(30px);
-            margin-left: 1%;
+            margin-left: 6%;
             .cusinfor_image_card {
                 position: relative;
                 margin-left: 7%;
@@ -398,7 +398,7 @@
             grid-template-columns: auto auto;
             .cusinfor_line1 {
                 grid-column: 1;
-                margin-left: 90px;
+                margin-left: 60px;
                 margin-bottom: pxToRem(00px);
                 @include font($secondary-font,48px);
                 width: pxToRem(460px);
