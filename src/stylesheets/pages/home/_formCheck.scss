@@ -1,0 +1,240 @@
+@use '../../abstracts/' as *;
+
+.packformCheck{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.formCheck {
+    margin-top: 15%;
+    margin-left: 0%;
+    width: 87%;
+    min-height: max-content;
+    padding-bottom: 3%;
+    border-radius: 20px;
+    background-color: $color_background_checkstt;
+
+    .formCheck_line1 {
+        width: 100%;
+        height: 40px;
+        flex-shrink: 0;
+        border-radius: 20px 20px 0 0;
+        background-color: $color_background_formSub;
+        display: inline-flex;
+        @include font($secondary-font,10px,700);
+        line-height: normal;
+        justify-content: center;
+        align-items: center;
+        color: $color_white;
+    }
+
+    .formCheck_input {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        margin-top: 6%;
+        margin-left: 10%;
+
+        .formCheck_input_line1,
+        .formCheck_input_line2 {
+            width: 80%;
+            height: pxToRem(50px);
+            flex-shrink: 0;
+            border-radius: 10px;
+            background-color: $color_background_formSub;
+            margin-bottom: 6%;
+        }
+
+        .formCheck_input_line1 {
+            border: 3px solid $color_blue;
+        }
+
+        .formCheck_input_line1::placeholder {
+            @include font($secondary-font,12px,500);
+            color: $color_white;
+            padding-left: 7%;
+        }
+
+        .formCheck_input_line2 {
+            border: 3px solid $color_icon_right;
+        }
+
+        .formCheck_input_line2::placeholder {
+            @include font($secondary-font,12px,500);
+            color: $color_initial_header;
+            line-height: normal;
+            padding-left: 9%;
+        }
+
+        .formCheck_input_button {
+            font-family: $secondary-font;
+            margin-right: 39%;
+            display: flex;
+            width: 40%;
+            height: 50px;
+            padding: 20px 25px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-shrink: 0;
+            border-radius: 10px;
+            border: 3px solid $color_blue;
+            background-color: $color_background_checkstt;
+            margin-bottom: 5%;
+            color: $color_blue;
+        }
+    }
+
+    .formCheck_line2 {
+        
+        color: $color_blue;
+        text-align: center;
+        @include font($secondary-font,10px,700);
+        line-height: normal;
+        .span{
+            width: 250px;
+        }
+    }
+
+    .out {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-self: center;
+        justify-items: center;
+        width: 90%;
+        height: 50px;
+        flex-shrink: 0;
+        border-radius: 10px;
+        background-color: $color_background_formSub;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .link {
+        color: $color_blue;
+    }
+
+}
+@include middle{
+   
+}
+@include tablet {
+    .formCheck {
+        top: 1670px;
+        left: 7%;
+        height: 482px;
+        flex-shrink: 0;
+
+        .formCheck_line1 {
+            height: 55px;
+            @include font($secondary-font,20px);
+            border-radius: 20px  20px 0 0;
+        }
+
+        .formCheck_input {
+         
+            .formCheck_input_line1,
+            .formCheck_input_line2 {
+                height: pxToRem(69px);
+            }
+
+            .formCheck_input_line1::placeholder {
+                @include font($secondary-font,20px);
+            }
+
+            .formCheck_input_line2::placeholder {
+                color: $color_initial_header;
+                @include font($secondary-font,20px);
+            }
+
+            .formCheck_input_button {
+                 margin-right: 60%;
+                display: flex;
+                width: 172px;
+                height: 64px;
+                @include font($secondary-font,20px);
+                margin-bottom: 2%;
+            }
+        }
+
+        .formCheck_line2 {
+            @include font($secondary-font,14px);
+            .span{
+                width: 455px;
+            }
+        }
+
+        .out {
+            height: 50px;
+        }
+
+    }
+}
+
+@include desktop {
+    .formCheck {
+        top: 1250px;
+        padding-bottom: 0;
+        border-radius: 10px;
+        .formCheck_line1 {
+            height: 101px;
+            @include font($secondary-font,24px);
+        }
+
+        .formCheck_input {
+            width: 100%;
+            flex-direction: row;
+            margin-top: 3%;
+            align-items: center;
+            margin-left: 0;
+
+            .formCheck_input_line1,
+            .formCheck_input_line2 {
+                width: pxToRem(408px);
+                height: pxToRem(69px);
+                margin-left: 20px;
+               margin-bottom: 0;
+            }
+
+            .formCheck_input_line1::placeholder {
+                @include font($secondary-font,20px);
+            }
+
+            .formCheck_input_line2::placeholder {
+                color: $color_initial_header;
+                @include font($secondary-font,20px);
+            }
+
+            .formCheck_input_button {
+                margin-right: 0;
+                display: flex;
+                width: 172px;
+                height: 75px;
+                @include font($secondary-font,24px);
+                margin-left: 20px;
+                margin-bottom: 0;
+            }
+            .formCheck_input_button:hover {
+                box-shadow: 0 0 5px cyan,
+                        0 0 25px cyan;
+            }
+        }
+
+        .formCheck_line2 {
+            @include font($secondary-font,24px);
+            .span{
+                width: 785px;
+            }
+        }
+
+        .out {
+            width: 100%;
+            height: 70px;    
+            margin-top: 50px;  
+            margin-bottom: auto;
+        }
+
+    }
+}
