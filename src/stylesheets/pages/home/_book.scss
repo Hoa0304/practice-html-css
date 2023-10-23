@@ -1,0 +1,77 @@
+@use '../../abstracts/' as *;
+
+.getinfor{
+    margin-top: 15%;
+    margin-left: 0%;
+    width: 100%;
+    .title_line1{
+        margin-left: 6%;
+        display: inline-flex;
+        .clock--svg{
+            width: pxToRem(20px);
+            height: pxToRem(20px);
+            color: $color_blue;
+        }
+        .title_line1_content{
+            width: pxToRem(199px);
+            color: $color_white;
+            @include font($primary-font,14px,700);
+            line-height: normal;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+           
+        }
+        margin-bottom: 36px;
+    }
+}
+@include tablet{
+    .getinfor{
+        top: pxToRem(1235px);
+        .title_line1{
+            .clock--svg{
+                width: pxToRem(30px);
+                height: pxToRem(30px);
+            }
+            .title_line1_content{
+                width: pxToRem(340px);
+                @include font($primary-font,24px);
+            } 
+            margin-bottom: 42px;
+        }       
+    }
+    
+}
+@include middle{
+    .getinfor{
+        margin-left: 0;
+        top: pxToRem(1235px);
+        .title_line1{
+            .clock--svg{
+                width: pxToRem(30px);
+                height: pxToRem(30px);
+            }
+            .title_line1_content{
+                width: pxToRem(340px);
+                @include font($primary-font,24px);
+            }
+       margin-bottom: 42px;
+ }
+    }
+}
+@include desktop{
+    .getinfor{
+        top: pxToRem(816px);
+        .title_line1{
+            .clock--svg{
+                width: pxToRem(30px);
+                height: pxToRem(30px);
+            }
+            .title_line1_content{
+                width: pxToRem(340px);
+                @include font($primary-font,24px);
+            }
+        margin-bottom: 19px;
+        }
+    }
+}
