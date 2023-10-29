@@ -12,10 +12,8 @@
   "license": "ISC",
   "dependencies": {
     "posthtml": "^0.16.6"
-    
   },
   "devDependencies": {
-    
     "cssnano": "4.1.11",
     "cssnano-preset-default": "4.0.7",
     "cssnano-utils": "2.0.1",
@@ -35,6 +33,6 @@
     "posthtml-doctype": "^1.1.1",
     "posthtml-include": "^1.7.4",
     "sass": "^1.69.3",
-    "parcel-bundler":"1.12.5"
+    "parcel-bundler": "1.12.5"
   }
 }

@@ -37,7 +37,6 @@
             flex-shrink: 0;
             border-radius: 20px;
             border: 3px solid $color_initial_header;
-            margin-right: 3%;
             .fg {
                 width: 50px;
                 height: 50px;
@@ -100,7 +99,7 @@
                 height: 84px;
             }
             .getV_content_para2 {
-                @include font($secondary-font,20px);
+                @include font($primary-font,20px);
                 color: $color_initial_header;
                 margin-bottom: 40px;
                 width: 537px;
@@ -120,7 +119,6 @@
                 width: 250px;
                 height: 290px;
                 border-radius: 50px;  
-                margin-right: 10px;
                 .fg {
                     width: 70px;
                     height: 70px;
@@ -167,7 +165,7 @@
                 }
                 .getV_content_para2 {
                     margin-left: 20%;
-                    @include font($secondary-font,20px);
+                    @include font($primary-font,20px);
                     color: $color_initial_header;
                     margin-bottom: 40px;
                     width: 537px;
@@ -190,7 +188,6 @@
                     width: 250px;
                     height: 290px;
                     border-radius: 50px;  
-                    margin-left: 1%;
                     .fg {
                         width: 70px;
                         height: 70px;

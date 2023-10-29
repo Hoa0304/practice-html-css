@@ -44,6 +44,11 @@
             border-radius: 10px;
             background-color: $color_background_formSub;
             margin-bottom: 6%;
+           
+        }
+        input[type="text"]{
+            @include font($secondary-font,20px,500);
+            color: $color_white;
         }
 
         .formCheck_input_line1 {
@@ -53,7 +58,6 @@
         .formCheck_input_line1::placeholder {
             @include font($secondary-font,12px,500);
             color: $color_white;
-            padding-left: 7%;
         }
 
         .formCheck_input_line2 {
@@ -64,7 +68,6 @@
             @include font($secondary-font,12px,500);
             color: $color_initial_header;
             line-height: normal;
-            padding-left: 9%;
         }
 
         .formCheck_input_button {

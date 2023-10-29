@@ -124,7 +124,7 @@
                 }
             }
             .vBC_para3{
-                @include font($secondary-font,18px);
+                @include font($primary-font,18px);
                 width: 550px;
             }
         }
@@ -142,7 +142,7 @@
                         .vdp{
                             height: 45px;
                             border-radius: 10px;
-                            @include font($secondary-font,18px);
+                            @include font($primary-font,18px);
                             padding: 3px 30px;
                             margin-left: -25px;
                         }
@@ -186,7 +186,7 @@
                 }
             }
             .vBC_para3{
-                @include font($secondary-font,24px);
+                @include font($primary-font,24px);
                 width: 953px;
             }
         }
@@ -205,7 +205,7 @@
                         .vdp{
                             height: 70px;
                             border-radius: 15px;
-                            @include font($secondary-font,20px);
+                            @include font($primary-font,20px);
                             padding: 3px 50px;
                             margin-left: -40px;
                         }
