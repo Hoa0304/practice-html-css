@@ -29,7 +29,7 @@
             }
         }
         .infor_line567{
-            @include font($secondary-font,14px,700);
+            @include font($primary-font,14px,700);
             color: $color_gray_opa7;
             line-height: normal;
             width: 80%;
@@ -44,7 +44,7 @@
                 padding: pxToRem(20px) pxToRem(25px);
                 justify-content: center;
                 align-items: center;
-                @include font($secondary-font,14px,700);
+                @include font($primary-font,14px,700);
                 background-color: $color_blue;
                 border-radius: 20px;
                 box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
@@ -65,7 +65,7 @@
                 border-radius: 20px;
                 background-color: $color_background_checkstt;
                 border: 2px solid $color_blue;
-                @include font($secondary-font,14px,700);
+                @include font($primary-font,14px,700);
                 line-height: normal;
                 color: $color_white;
             }
