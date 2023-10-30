@@ -44,6 +44,7 @@
             border-radius: 10px;
             background-color: $color_background_formSub;
             margin-bottom: 6%;
+            padding-left: 5%;
            
         }
         input[type="text"]{
@@ -141,6 +142,8 @@
             .formCheck_input_line1,
             .formCheck_input_line2 {
                 height: pxToRem(69px);
+                border-radius: 20px;
+                padding-left: 5%;
             }
 
             .formCheck_input_line1::placeholder {
@@ -159,6 +162,7 @@
                 height: 64px;
                 @include font($secondary-font,20px);
                 margin-bottom: 2%;
+                border-radius: 20px;
             }
         }
 
@@ -195,10 +199,12 @@
 
             .formCheck_input_line1,
             .formCheck_input_line2 {
-                width: pxToRem(408px);
+                width: 32%;
                 height: pxToRem(69px);
-                margin-left: 20px;
+                margin-left: 15px;
                margin-bottom: 0;
+               border-radius: 25px;
+               padding-left: 5%;
             }
 
             .formCheck_input_line1::placeholder {
@@ -213,11 +219,12 @@
             .formCheck_input_button {
                 margin-right: 0;
                 display: flex;
-                width: 172px;
+                width: 165px;
                 height: 75px;
                 @include font($secondary-font,24px);
-                margin-left: 20px;
+                margin-left:1%;
                 margin-bottom: 0;
+                border-radius: 25px;
             }
             
         }
