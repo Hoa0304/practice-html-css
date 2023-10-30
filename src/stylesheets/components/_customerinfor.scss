@@ -175,7 +175,6 @@
                     .phonenumber {
                         @include font($primary-font,14px,500);
                         line-height: normal;
-                        color: $color_0_025;
                         height: 48px;
                         border-radius: 10px;
                         background-color: $colorphonenumnber;
@@ -227,9 +226,13 @@
                     color: $color_0_05;
                     @include font($secondary-font,14px,600);
                     line-height: normal;
-                    margin-right: 25px;
+                    margin-right: 25px; 
+                    
+                        text-decoration: none;
+                    
                 }
                 .cfq2{
+                    text-decoration: none;
                     color: $color_blue;
                     @include font($secondary-font,14px,700);
                     line-height: normal;
