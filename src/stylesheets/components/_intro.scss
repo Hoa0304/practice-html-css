@@ -131,19 +131,19 @@
             }
             .block_doctor{
                 position: absolute;
-                bottom: -15%;
+                bottom: -5%;
                 left: 0;
-                padding: 8%;
+                padding: 5%;
                 border-radius: 20px;
                 background-color: $color_sm_gray;
                 @include flex($justify:center,$align:center);
                 @include tablet{
-                    padding: 5%;
-                    bottom:-10%
+                    padding: 3%;
+                    bottom:-8%
                 }
                 @include desktop{
-                    padding: 5%;
-                    bottom:-10%
+                    padding: 3%;
+                    bottom:-8%
                 }
                 .three_doctor{
                     @include flex($gap:-10px);
