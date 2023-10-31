@@ -42,7 +42,7 @@
         }
         @include desktop{
             @include font($font-size:pxToRem(48px));
-            width: 100%;
+            width: 90%;
         }
         .infor_line234--clblue{
            color:$color_blue;
@@ -59,7 +59,7 @@
             @include font($font-size:pxToRem(20px));
         }
         @include desktop{
-            width: 100%;
+            width: 80%;
             @include font($font-size:pxToRem(24px));
         }
       }
@@ -99,9 +99,10 @@
             @include flex($direction:column, $justify:center,$align:center);
             .catch_vaccine--fg{
                 width: 80%;
-                height: 100%;
                 .catch_vaccine--svg{
-                    width: 100%;
+                    width: 100%;                
+                    height: 100%;
+
                 }
                 .two-image{
                     position: absolute;
