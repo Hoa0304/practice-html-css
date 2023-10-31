@@ -99,6 +99,7 @@
             @include flex($direction:column, $justify:center,$align:center);
             .catch_vaccine--fg{
                 width: 80%;
+                height: 100%;
                 .catch_vaccine--svg{
                     width: 100%;
                 }
