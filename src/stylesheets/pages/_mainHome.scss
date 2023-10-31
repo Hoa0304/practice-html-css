@@ -1,29 +1,4 @@
 @use "abstracts/" as *;
-     body{
-        @include bg-img("../assets/images/bgMobile.png");
-       position: relative;
-       z-index: -1;
-    } 
-
-@include middle{
-    body{
-        @include bg-img("../assets/images/bgTablet.png");
-       
-    } 
-}
-
-@include tablet{
-    body{
-        @include bg-img("../assets/images/bgTablet.png");
-       
-    }
-}
-@include desktop{
-    body{
-        @include bg-img("../assets/images/bgDesktop.png");
-    
-    }
-}
 
 .main-container {
     width: 100%;
@@ -31,4 +6,11 @@
     flex-direction: column;
     margin: 0 auto;
     min-width: 330px;
+    @include bg-img("../assets/images/bgMobile.png");
+    @include tablet {
+      @include bg-img("../assets/images/bgTablet.png");
+    }
+    @include desktop {
+      @include bg-img("../assets/images/bgDesktop.png");
+    }
 }

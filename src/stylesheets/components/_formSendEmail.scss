@@ -1,228 +1,222 @@
-@use "../abstracts/" as *;
+// @use "../abstracts/" as *;
 
-.formsendmail {
-    width: 100%;
-    flex-shrink: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: -40%;
+// .formsendmail {
+//     width: 100%;
+//     flex-shrink: 0;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     margin-top: -40%;
 
-    .formsendmails {
-        width: 305px;
-        height: 206px;
-        background-color: $color_icon_right;
-        border-radius: 15px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+//     .formsendmails {
+//         width: 305px;
+//         height: 206px;
+//         background-color: $color_icon_right;
+//         border-radius: 15px;
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
 
-        form {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            text-align: center;
-            width: 280px;
-            height: 147px;
-            flex-shrink: 0;
-            border-radius: 10px;
-            background-color: $color_blue;
+//         form {
+//             display: flex;
+//             justify-content: center;
+//             align-items: center;
+//             flex-direction: column;
+//             text-align: center;
+//             width: 280px;
+//             height: 147px;
+//             flex-shrink: 0;
+//             border-radius: 10px;
+//             background-color: $color_blue;
 
-            .formsendmail_line1 {
-                @include font($primary-font,18px,700);
-                color: $color_white;
-                line-height: normal;
-                margin-top: -10%;
-                margin-bottom: 2%;
+//             .formsendmail_line1 {
+//                 @include font($primary-font,18px,700);
+//                 color: $color_white;
+//                 line-height: normal;
+//                 margin-top: -10%;
+//                 margin-bottom: 2%;
 
-            }
+//             }
 
-            .formsendmail_line2 {
-                @include font($primary-font,10px,500);
-                color: $color_white;
-                line-height: normal;
-                margin-bottom: 10%;
-            }
+//             .formsendmail_line2 {
+//                 @include font($primary-font,10px,500);
+//                 color: $color_white;
+//                 line-height: normal;
+//                 margin-bottom: 10%;
+//             }
 
-            .formsendemail_input {
-                display: flex;
-                justify-content: center;
-                align-items: center;
+//             .formsendemail_input {
+//                 display: flex;
+//                 justify-content: center;
+//                 align-items: center;
 
-                .formsendinput {
-                    border-radius: 20px 0px 0px 20px;
-                    width: 80%;
-                    height: 40px;
-                    background-color: $color_white;
-                    border: 0;
-                }
-                input[type="text"]{
-                    @include font($primary-font,10px);
-                    padding-left: 30px;
-                }
+//                 .formsendinput {
+//                     border-radius: 20px 0px 0px 20px;
+//                     width: 80%;
+//                     height: 40px;
+//                     background-color: $color_white;
+//                     border: 0;
+//                 }
+//                 input[type="text"]{
+//                     @include font($primary-font,10px);
+//                     padding-left: 30px;
+//                 }
 
-                .formsendinput::placeholder {
-                    color: $color_0_025;
-                    line-height: normal;
-                    @include font($primary-font,10px,500);
-                    padding-left: 10px;
+//                 .formsendinput::placeholder {
+//                     color: $color_0_025;
+//                     line-height: normal;
+//                     @include font($primary-font,10px,500);
+//                     padding-left: 10px;
 
-                }
+//                 }
 
-                .formsendbutton {
-                    width: 60px;
-                    height: 41px;
-                    margin-left: -2px;
-                    border-radius: 0px 20px 20px 0px;
-                    background-color: $colorsendbutton;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
+//                 .formsendbutton {
+//                     width: 60px;
+//                     height: 41px;
+//                     margin-left: -2px;
+//                     border-radius: 0px 20px 20px 0px;
+//                     background-color: $colorsendbutton;
+//                     display: flex;
+//                     justify-content: center;
+//                     align-items: center;
 
-                    .send--fg {
-                        .send--svg {
-                            height: 23px;
-                            width: 20px;
-                        }
-                    }
-                }
-            }
-        }
-    }
+//                     .send--fg {
+//                         .send--svg {
+//                             height: 23px;
+//                             width: 20px;
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
 
-}
-@include middle{
-    .formsendmail{
-         margin-top: -25%;
-    }
-   
-}
-@include tablet {
-    .formsendmail {
+// }
+// @include tablet {
+//     .formsendmail {
 
-        margin-top: -32%;
+//         margin-top: -32%;
 
-        .formsendmails {
-            width: 709px;
-            height: 320px;
-            border-radius: 50px;
+//         .formsendmails {
+//             width: 709px;
+//             height: 320px;
+//             border-radius: 50px;
 
-            form {
-                width: 659px;
-                height: 263px;
-                border-radius: 50px;
+//             form {
+//                 width: 659px;
+//                 height: 263px;
+//                 border-radius: 50px;
 
-                .formsendmail_line1 {
-                    @include font($primary-font,36px);
-                    margin-top: -5%;
-                    margin-bottom: 2%;
+//                 .formsendmail_line1 {
+//                     @include font($primary-font,36px);
+//                     margin-top: -5%;
+//                     margin-bottom: 2%;
 
-                }
+//                 }
 
-                .formsendmail_line2 {
-                    @include font($primary-font,20px);
-                    margin-bottom: 5%;
-                }
+//                 .formsendmail_line2 {
+//                     @include font($primary-font,20px);
+//                     margin-bottom: 5%;
+//                 }
 
-                .formsendemail_input {
-                    .formsendinput {
-                        border-radius: 30px 0px 0px 30px;
-                        width: 450px;
-                        height: 75px;
-                    }
-                    input[type="text"]{
-                        @include font($primary-font,20px);
-                        padding-left: 30px;
-                    }
+//                 .formsendemail_input {
+//                     .formsendinput {
+//                         border-radius: 30px 0px 0px 30px;
+//                         width: 450px;
+//                         height: 75px;
+//                     }
+//                     input[type="text"]{
+//                         @include font($primary-font,20px);
+//                         padding-left: 30px;
+//                     }
 
-                    .formsendinput::placeholder {
-                        @include font($primary-font,20px);
-                        padding-left: 30px;
+//                     .formsendinput::placeholder {
+//                         @include font($primary-font,20px);
+//                         padding-left: 30px;
 
-                    }
+//                     }
 
-                    .formsendbutton {
-                        width: 100px;
-                        height: 75px;
-                        margin-left: -2px;
-                        border-radius: 0px 30px 30px 0px;
+//                     .formsendbutton {
+//                         width: 100px;
+//                         height: 75px;
+//                         margin-left: -2px;
+//                         border-radius: 0px 30px 30px 0px;
 
-                        .send--fg {
-                            .send--svg {
-                                height: 40px;
-                                width: 40px;
-                            }
-                        }
-                    }
-                }
-            }
-        }
+//                         .send--fg {
+//                             .send--svg {
+//                                 height: 40px;
+//                                 width: 40px;
+//                             }
+//                         }
+//                     }
+//                 }
+//             }
+//         }
 
-    }
-}
+//     }
+// }
 
-@include desktop {
-    .formsendmail {
+// @include desktop {
+//     .formsendmail {
 
-        margin-top: -30%;
+//         margin-top: -30%;
 
-        .formsendmails {
-            width: 1067px;
-            height: 435px;
-            border-radius: 50px;
+//         .formsendmails {
+//             width: 1067px;
+//             height: 435px;
+//             border-radius: 50px;
 
-            form {
-                width: 1031px;
-                height: 400px;;
-                border-radius: 50px;
+//             form {
+//                 width: 1031px;
+//                 height: 400px;;
+//                 border-radius: 50px;
 
-                .formsendmail_line1 {
-                    @include font($primary-font,48px);
-                    margin-top: -5%;
-                    margin-bottom: 2%;
+//                 .formsendmail_line1 {
+//                     @include font($primary-font,48px);
+//                     margin-top: -5%;
+//                     margin-bottom: 2%;
 
-                }
+//                 }
 
-                .formsendmail_line2 {
-                    @include font($primary-font,24px);
-                    margin-bottom: 5%;
-                }
+//                 .formsendmail_line2 {
+//                     @include font($primary-font,24px);
+//                     margin-bottom: 5%;
+//                 }
 
-                .formsendemail_input {
-                    .formsendinput {
-                        border-radius: 30px 0px 0px 30px;
-                        width: 450px;
-                        height: 75px;
-                    }
-                    input[type="text"]{
-                        @include font($primary-font,20px);
-                        padding-left: 30px;
-                    }
+//                 .formsendemail_input {
+//                     .formsendinput {
+//                         border-radius: 30px 0px 0px 30px;
+//                         width: 450px;
+//                         height: 75px;
+//                     }
+//                     input[type="text"]{
+//                         @include font($primary-font,20px);
+//                         padding-left: 30px;
+//                     }
 
-                    .formsendinput::placeholder {
-                        @include font($primary-font,20px);
-                        padding-left: 0px;
+//                     .formsendinput::placeholder {
+//                         @include font($primary-font,20px);
+//                         padding-left: 0px;
 
-                    }
+//                     }
 
-                    .formsendbutton {
-                        width: 100px;
-                        height: 77px;
-                        margin-left: -2px;
-                        border-radius: 0px 30px 30px 0px;
+//                     .formsendbutton {
+//                         width: 100px;
+//                         height: 77px;
+//                         margin-left: -2px;
+//                         border-radius: 0px 30px 30px 0px;
 
-                        .send--fg {
-                            cursor: pointer;
-                            .send--svg {
-                                height: 40px;
-                                width: 40px;
-                            }
-                        }
-                    }
-                }
-            }
-        }
+//                         .send--fg {
+//                             cursor: pointer;
+//                             .send--svg {
+//                                 height: 40px;
+//                                 width: 40px;
+//                             }
+//                         }
+//                     }
+//                 }
+//             }
+//         }
 
-    }
-}
+//     }
+// }

@@ -1,19 +1,21 @@
 <header class="header-container">
-    
-        <figure><img class="icon_align--right" src="../assets/icons/align-right.svg" alt="Menu_Icon"></figure>
+    <div class="container">
+        <figure><img class="icon--right" src="../assets/icons/align-right.svg" alt="Menu_Icon"></figure>
 
-        <a href="#" class="home_icon--left">Vaccination.ng</a>
+        <a href="#" class="home__icon--left">Vaccination.ng</a>
 
         <nav>
             <ul>
                 <include src="./components/navList.html" locals='{
-               "classList":"nav_pk_items",
-               "classLink":"nav_items",
+               "classList":"nav__pk__items",
+               "classLink":"nav__items",
                "list": "[`Home`,`Services`,`Schedule`,`Contact us`]"
             }'>
                 </include>
-            </ul>s
+            </ul>
         </nav>
         <button class="checkstatus--right">Check Status</button>
     
+    </div>
+       
 </header>
