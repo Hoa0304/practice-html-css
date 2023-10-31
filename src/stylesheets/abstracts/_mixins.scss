@@ -32,20 +32,39 @@
     }
 }
 
-@mixin font($font-family, $font-size, $font-weight: normal,$font-style: normal) {
-    font-family: $font-family;
-    font-size: $font-size;
+@mixin font($font-family:false,$font-size:false,$font-weight:false,$font-style:false,$line-height:false,$color:false){
+  @if ($font-family != false) {
+   font-family:$font-family;
+  }
+  @if $font-size{
+    font-size: $font-size; 
+  }
+  
+  @if $font-weight{
     font-weight: $font-weight;
+  }
+  
+  @if $font-style{
     font-style: $font-style;
-}
-
-@mixin flex(
+  }
+  
+  @if $line-height{
+    line-height: $line-height;
+  }
+  
+  @if $color{
+    color: $color;
+  }
+  
+  }
+  @mixin flex(
   $display: flex,
   $direction: false,
   $align: false,
   $justify: false,
-  $wrap: false
-) {
+  $wrap: false,
+  $gap: false
+  ) {
   display: $display;
   @if $direction {
     flex-direction: $direction;
@@ -59,4 +78,25 @@
   @if $wrap {
     flex-wrap: $wrap;
   }
-}
+  @if $gap {
+    gap: $gap;
+  }
+  }
+  @mixin button($width:false,$height:false,$background-color:false,$border-radius:false,$border:false){
+    @if $width != false{
+        width: $width;
+    }
+    @if $height != false{
+        height: $height;
+    }
+    @if $background-color != false{
+        background-color: $background-color;
+    }
+    @if $border-radius != false{
+        border-radius: $border-radius;
+    }
+    @if $border!= false{
+        border: $border;
+    }
+    cursor: pointer;
+  }
