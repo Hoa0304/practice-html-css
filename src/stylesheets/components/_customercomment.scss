@@ -167,7 +167,7 @@
                 }
 
                 .cc_para1 {
-                    @include font($secondary-font,20px);
+                    @include font($primary-font,20px);
 
                     width: 590px;
                 }
@@ -256,7 +256,7 @@
                 }
 
                 .cc_para1 {
-                    @include font($secondary-font,24px);
+                    @include font($primary-font,24px);
                     width: 953px;
                 }
             }

@@ -12,8 +12,9 @@
     .intro_infor{
         margin-left: 10%;
         width: 90%;
+        padding-top: 2%;
         .infor_line1{
-            @include font($secondary-font,12px,700);
+            @include font($primary-font,12px,700);
             color: $color_blue;
             line-height: normal;
         }
@@ -180,10 +181,12 @@
                     @include font($secondary-font,20px);
                     height: pxToRem(64px);
                     margin-right: 10px;
+                    width: 30%;
                 }
                 .button--right{
                     @include font($secondary-font,20px);
                     height: pxToRem(64px);
+                    width: 30%;
                 }
             }
         }
@@ -301,7 +304,7 @@
              font-size: pxToRem(24px);
              height: pxToRem(69px);
              width: pxToRem(210px);
-             margin-right: 30px;
+             margin-right: 10px;
              font-weight: 700;
             }
             .button--right{
